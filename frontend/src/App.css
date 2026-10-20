@@ -1,0 +1,14 @@
+:root { font-family: Inter, Arial, sans-serif; color: #172b3a; background: #f3f6f8; }
+* { box-sizing: border-box; } body { margin: 0; }
+.container { max-width: 960px; margin: 0 auto; padding: 48px 24px; }
+header { display: flex; align-items: center; gap: 16px; margin-bottom: 40px; }
+.marca { display: grid; place-items: center; width: 58px; height: 58px; background: #16835e; color: white; border-radius: 16px; font-size: 26px; font-weight: 800; }
+h1 { margin: 0; font-size: 30px; } header p { margin: 5px 0; color: #657583; }
+.painel { background: white; padding: 32px; border-radius: 20px; box-shadow: 0 8px 32px #172b3a0d; }
+.painel h2 { margin-top: 0; } .painel p { color: #657583; line-height: 1.6; }
+.status { display: flex; align-items: center; gap: 10px; padding: 16px; background: #e9f7f0; border-radius: 10px; margin: 24px 0; }
+.indicador { width: 10px; height: 10px; border-radius: 50%; background: #16835e; }
+.modulos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.modulo { display: flex; justify-content: space-between; gap: 12px; padding: 16px; border: 1px solid #e1e7eb; border-radius: 10px; text-transform: capitalize; }
+.modulo span { color: #657583; } footer { margin-top: 32px; text-align: center; color: #657583; font-size: 13px; }
+@media (max-width: 600px) { .modulos { grid-template-columns: 1fr; } .painel { padding: 20px; } }
