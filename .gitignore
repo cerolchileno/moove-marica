@@ -14,3 +14,24 @@ __pycache__/
 Thumbs.db
 # TypeScript build cache
 *.tsbuildinfo
+# Ambiente virtual Python
+.venv/
+__pycache__/
+*.pyc
+
+# Cache TypeScript
+*.tsbuildinfo
+
+# Grafos gerados
+backend/data/*.graphml
+# Ambientes virtuais Python
+.venv/
+__pycache__/
+*.pyc
+
+# Cache do OSMnx
+backend/cache/
+backend/data/*.graphml
+
+# Cache de compilação TypeScript
+*.tsbuildinfo
