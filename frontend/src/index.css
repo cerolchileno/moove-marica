@@ -1,2 +1,8 @@
-body { min-width: 320px; min-height: 100vh; }
-button, input { font: inherit; }
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#root {
+  width: 100%;
+}
