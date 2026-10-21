@@ -1,9 +1,13 @@
 
 import { useRef, useState } from "react";
+
 import MaricaMap, { type Ponto } from "./components/MaricaMap";
 import BuscaEndereco from "./components/BuscaEndereco";
+import LinhasOnibus from "./components/LinhasOnibus";
+import PlanejadorOnibus from "./components/PlanejadorOnibus";
+import type { OpcaoOnibus } from "./components/RotaOnibus";
+
 import "./App.css";
-import PontosOnibus from "./components/PontosOnibus";
 
 type Transporte = "caminhada" | "onibus" | "bicicleta";
 
@@ -42,18 +46,23 @@ export default function App() {
   const [resultado, setResultado] =
     useState<ResultadoRota | null>(null);
 
+  const [rotaOnibus, setRotaOnibus] =
+    useState<OpcaoOnibus | null>(null);
+
   const [carregando, setCarregando] = useState(false);
 
-  const requisicaoAtual = useRef<AbortController | null>(null);
+  const requisicaoAtual =
+    useRef<AbortController | null>(null);
 
   function cancelarRotaAnterior() {
     requisicaoAtual.current?.abort();
     requisicaoAtual.current = null;
+
     setCarregando(false);
     setResultado(null);
+    setRotaOnibus(null);
   }
 
-  // Seleção de pontos clicando no mapa
   function selecionarPonto(ponto: Ponto) {
     cancelarRotaAnterior();
 
@@ -68,7 +77,6 @@ export default function App() {
     }
   }
 
-  // Seleção da origem pela pesquisa de endereços
   function selecionarOrigemBusca(ponto: Ponto) {
     cancelarRotaAnterior();
     setOrigem(ponto);
@@ -80,7 +88,6 @@ export default function App() {
     );
   }
 
-  // Seleção do destino pela pesquisa de endereços
   function selecionarDestinoBusca(ponto: Ponto) {
     cancelarRotaAnterior();
     setDestino(ponto);
@@ -92,7 +99,6 @@ export default function App() {
     );
   }
 
-  // Limpar os pontos e a rota calculada
   function limpar() {
     cancelarRotaAnterior();
 
@@ -104,7 +110,6 @@ export default function App() {
     );
   }
 
-  // Calcular rota utilizando o backend FastAPI
   async function planejar() {
     if (!origem || !destino) {
       setMensagem(
@@ -113,10 +118,9 @@ export default function App() {
       return;
     }
 
-    // Ônibus ainda não possui roteamento implementado
     if (transporte === "onibus") {
       setMensagem(
-        "O cálculo de rotas de ônibus ainda está em desenvolvimento."
+        "Utilize o planejador experimental de ônibus abaixo."
       );
       return;
     }
@@ -127,6 +131,7 @@ export default function App() {
     requisicaoAtual.current = controlador;
 
     setCarregando(true);
+
     setMensagem(
       transporte === "bicicleta"
         ? "Calculando rota experimental de bicicleta..."
@@ -205,7 +210,7 @@ export default function App() {
           <div className="simbolo">M</div>
 
           <div>
-            <h1>Moove Marica</h1>
+            <h1>Moove Maricá</h1>
             <p>Sua cidade em movimento.</p>
           </div>
         </div>
@@ -229,7 +234,6 @@ export default function App() {
             </p>
           </div>
 
-          {/* Pesquisa de origem e destino */}
           <div className="pesquisas-endereco">
             <BuscaEndereco
               titulo="Origem"
@@ -242,16 +246,13 @@ export default function App() {
             />
           </div>
 
-          {/* Coordenadas dos pontos selecionados */}
           <div className="campos">
             <div className="campo">
               <span className="ponto origem" />
 
               <div>
                 <label>Origem</label>
-                <strong>
-                  {formatarPonto(origem)}
-                </strong>
+                <strong>{formatarPonto(origem)}</strong>
               </div>
             </div>
 
@@ -260,9 +261,7 @@ export default function App() {
 
               <div>
                 <label>Destino</label>
-                <strong>
-                  {formatarPonto(destino)}
-                </strong>
+                <strong>{formatarPonto(destino)}</strong>
               </div>
             </div>
           </div>
@@ -277,11 +276,13 @@ export default function App() {
           <h3>Como deseja viajar?</h3>
 
           <div className="transportes">
-            {([
-              ["caminhada", "🚶", "A pé"],
-              ["onibus", "🚌", "Ônibus"],
-              ["bicicleta", "🚲", "Bicicleta"],
-            ] as const).map(([id, icone, titulo]) => (
+            {(
+              [
+                ["caminhada", "🚶", "A pé"],
+                ["onibus", "🚌", "Ônibus"],
+                ["bicicleta", "🚲", "Bicicleta"],
+              ] as const
+            ).map(([id, icone, titulo]) => (
               <button
                 key={id}
                 className={
@@ -291,7 +292,6 @@ export default function App() {
                 }
                 onClick={() => {
                   cancelarRotaAnterior();
-
                   setTransporte(id);
 
                   setMensagem(
@@ -299,7 +299,7 @@ export default function App() {
                       ? "Modo caminhada selecionado."
                       : id === "bicicleta"
                         ? "Modo bicicleta experimental selecionado."
-                        : "Modalidade de ônibus em desenvolvimento."
+                        : "Modo ônibus experimental selecionado."
                   );
                 }}
                 aria-pressed={transporte === id}
@@ -322,29 +322,47 @@ export default function App() {
           />
 
           <div className="aviso">
-            <strong>Trânsito inteligente</strong>
+            <strong>
+              {transporte === "onibus"
+                ? "Transporte público experimental"
+                : "Trânsito inteligente"}
+            </strong>
 
             <p>
-              Em breve, os horários serão utilizados
-              na simulação de trânsito.
+              {transporte === "onibus"
+                ? "Os horários e as paradas da EPT ainda precisam de validação. Não são calculados tempos reais de espera."
+                : "Em breve, os horários serão utilizados na simulação de trânsito."}
             </p>
           </div>
 
-          <button
-            className="botao-principal"
-            onClick={planejar}
-            disabled={carregando}
-          >
-            {carregando
-              ? "Calculando rota..."
-              : "Planejar minha rota →"}
-          </button>
+          {transporte !== "onibus" && (
+            <button
+              className="botao-principal"
+              onClick={planejar}
+              disabled={carregando}
+            >
+              {carregando
+                ? "Calculando rota..."
+                : "Planejar minha rota →"}
+            </button>
+          )}
+
+          {transporte === "onibus" && (
+            <>
+              <PlanejadorOnibus
+                origem={origem}
+                destino={destino}
+                onResultado={setRotaOnibus}
+              />
+
+              <LinhasOnibus />
+            </>
+          )}
 
           <p className="mensagem" role="status">
             {mensagem}
           </p>
 
-          {/* Resultado do algoritmo A* */}
           {resultado && (
             <div className="resultado-rota">
               <h3>Resumo da sua rota</h3>
@@ -387,8 +405,62 @@ export default function App() {
             </div>
           )}
 
+          {transporte === "onibus" && rotaOnibus && (
+            <div className="resultado-rota">
+              <h3>Resumo experimental de ônibus</h3>
+
+              <p>
+                <strong>Linha:</strong>{" "}
+                {rotaOnibus.codigo}
+              </p>
+
+              <p>
+                <strong>Sentido:</strong>{" "}
+                {rotaOnibus.sentido}
+              </p>
+
+              <p>
+                <strong>Embarque:</strong>{" "}
+                {rotaOnibus.embarque.nome}
+              </p>
+
+              <p>
+                <strong>Desembarque:</strong>{" "}
+                {rotaOnibus.desembarque.nome}
+              </p>
+
+              <div className="resultado-dados">
+                <div>
+                  <span>Distância aproximada do ônibus</span>
+                  <strong>
+                    {(
+                      rotaOnibus.distancia_onibus_aproximada_m /
+                      1000
+                    ).toFixed(2)}{" "}
+                    km
+                  </strong>
+                </div>
+
+                <div>
+                  <span>Tempo estimado sem espera</span>
+                  <strong>
+                    {rotaOnibus.tempo_estimado_sem_espera_min.toFixed(1)}{" "}
+                    min
+                  </strong>
+                </div>
+              </div>
+
+              <p role="note">
+                ⚠️ Estimativa experimental, baseada
+                em distâncias aproximadas entre
+                paradas. Não representa o trajeto
+                oficial nem o horário real do ônibus.
+              </p>
+            </div>
+          )}
+
           <div className="rodape-painel">
-            Moove Marica · HackTown
+            Moove Maricá · HackTown
           </div>
         </aside>
 
@@ -396,7 +468,11 @@ export default function App() {
           <MaricaMap
             origem={origem}
             destino={destino}
-            rota={resultado?.coordenadas ?? []}
+            rota={
+              transporte === "onibus"
+                ? rotaOnibus?.coordenadas ?? []
+                : resultado?.coordenadas ?? []
+            }
             onSelecionar={selecionarPonto}
           />
 

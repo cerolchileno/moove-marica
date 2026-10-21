@@ -8,7 +8,11 @@ from app.services.routing import calcular_rota
 from datetime import datetime
 from app.services.bus_planner import planejar_onibus
 from app.services.pontos_onibus import listar_pontos_onibus
-
+from app.services.linhas_ept import listar_linhas
+from fastapi import HTTPException
+from pydantic import BaseModel, Field
+from app.services.roteamento_onibus import planejar_onibus
+from app.services.planejador_onibus import calcular_opcoes
 
 app = FastAPI(
     title="Moove Marica API",
@@ -151,3 +155,98 @@ def obter_pontos_onibus(limite: int = 1000):
             status_code=500,
             detail=str(erro),
         )
+
+
+@app.get("/api/onibus/linhas")
+def obter_linhas_ept(codigo: str | None = None):
+    from fastapi import HTTPException
+
+    try:
+        return listar_linhas(codigo)
+
+    except FileNotFoundError as erro:
+        raise HTTPException(
+            status_code=503,
+            detail=str(erro),
+        )
+
+    except ValueError as erro:
+        raise HTTPException(
+            status_code=500,
+            detail=str(erro),
+        )
+
+
+class CoordenadaOnibus(BaseModel):
+    lat: float = Field(ge=-90, le=90)
+    lng: float = Field(ge=-180, le=180)
+
+
+class PedidoRotaOnibus(BaseModel):
+    origem: CoordenadaOnibus
+    destino: CoordenadaOnibus
+    codigo_linha: str = "E01"
+
+
+@app.post("/api/rotas/onibus/experimental")
+def calcular_rota_onibus_experimental(
+    pedido: PedidoRotaOnibus,
+):
+    try:
+        return planejar_onibus(
+            origem_lat=pedido.origem.lat,
+            origem_lng=pedido.origem.lng,
+            destino_lat=pedido.destino.lat,
+            destino_lng=pedido.destino.lng,
+            codigo_linha=pedido.codigo_linha.upper(),
+        )
+
+    except FileNotFoundError as erro:
+        raise HTTPException(
+            status_code=503,
+            detail=str(erro),
+        )
+
+    except ValueError as erro:
+        raise HTTPException(
+            status_code=422,
+            detail=str(erro),
+        )
+
+@app.post("/api/rotas/onibus/planejar")
+def planejar_viagem_onibus(pedido: PedidoRotaOnibus):
+    from fastapi import HTTPException
+
+    try:
+        return calcular_opcoes(
+            origem_lat=pedido.origem.lat,
+            origem_lng=pedido.origem.lng,
+            destino_lat=pedido.destino.lat,
+            destino_lng=pedido.destino.lng,
+            codigo_linha=pedido.codigo_linha,
+        )
+
+    except FileNotFoundError as erro:
+        raise HTTPException(
+            status_code=503,
+            detail=str(erro),
+        )
+
+    except (ValueError, TypeError) as erro:
+        raise HTTPException(
+            status_code=422,
+            detail=str(erro),
+        )
+
+from pydantic import BaseModel, Field
+
+
+class CoordenadaOnibus(BaseModel):
+    lat: float = Field(ge=-90, le=90)
+    lng: float = Field(ge=-180, le=180)
+
+
+class PedidoRotaOnibus(BaseModel):
+    origem: CoordenadaOnibus
+    destino: CoordenadaOnibus
+    codigo_linha: str | None = None
