@@ -1,24 +1,28 @@
 
-:root {
-  --vermelho: #b91c1c;
-  --vermelho-escuro: #991b1b;
-  --vermelho-claro: #fef2f2;
-  --texto: #1f2937;
-  --cinza: #6b7280;
-  --borda: #e5e7eb;
-}
+/* ==========================================
+   MOOVE MARICA — INTERFACE PRINCIPAL
+   ========================================== */
 
 * {
   box-sizing: border-box;
 }
 
-body {
+html,
+body,
+#root {
   margin: 0;
-  font-family: Inter, "Segoe UI", Arial, sans-serif;
-  color: var(--texto);
+  width: 100%;
+  min-height: 100%;
 }
 
-button, input {
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+button,
+input {
   font: inherit;
 }
 
@@ -26,292 +30,404 @@ button {
   cursor: pointer;
 }
 
+/* Estrutura geral */
+
 .aplicacao {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  min-height: 550px;
-  background: #fff;
+  min-height: 100vh;
 }
 
 .cabecalho {
-  height: 76px;
-  flex-shrink: 0;
-  padding: 0 28px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: var(--vermelho);
+  min-height: 86px;
+  padding: 18px 32px;
+  background: #b91c1c;
   color: white;
-  box-shadow: 0 2px 12px #0002;
-  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+  position: relative;
+  z-index: 1000;
 }
 
 .identidade {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .simbolo {
-  display: grid;
-  place-items: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
   background: white;
-  color: var(--vermelho);
+  color: #b91c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 27px;
   font-weight: 900;
 }
 
 .identidade h1 {
-  font-size: 22px;
   margin: 0;
-  letter-spacing: -0.6px;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: 800;
 }
 
 .identidade p {
-  margin: 2px 0 0;
-  font-size: 12px;
-  color: #fee2e2;
+  margin: 4px 0 0;
+  font-size: 13px;
+  opacity: 0.9;
 }
 
 .etiqueta {
-  border: 1px solid #ffffff70;
-  padding: 8px 12px;
-  border-radius: 20px;
+  padding: 9px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
   font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
+/* Layout principal */
+
 .conteudo {
-  display: flex;
+  display: grid;
+  grid-template-columns: 370px minmax(0, 1fr);
   flex: 1;
   min-height: 0;
 }
 
 .painel {
-  width: 390px;
-  flex-shrink: 0;
-  padding: 28px;
-  overflow-y: auto;
+  padding: 28px 24px;
   background: white;
-  box-shadow: 3px 0 16px #0000000d;
+  border-right: 1px solid #e5e7eb;
+  overflow-y: auto;
   z-index: 500;
 }
 
+.painel-titulo {
+  margin-bottom: 25px;
+}
+
 .sobretitulo {
-  color: var(--vermelho);
+  color: #b91c1c;
   font-size: 11px;
   font-weight: 800;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
 }
 
 .painel-titulo h2 {
-  margin: 8px 0;
+  margin: 9px 0;
   font-size: 27px;
-  letter-spacing: -0.8px;
+  color: #111827;
 }
 
 .painel-titulo p {
-  color: var(--cinza);
+  margin: 0;
   font-size: 14px;
-  margin-bottom: 24px;
+  color: #64748b;
 }
 
+.painel h3 {
+  margin: 25px 0 12px;
+  font-size: 15px;
+  color: #1f2937;
+}
+
+/* Origem e destino */
+
 .campos {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 12px;
 }
 
 .campo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  border: 1px solid var(--borda);
+  gap: 13px;
+  min-height: 66px;
+  padding: 13px;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 15px;
-  min-height: 72px;
+  background: #f8fafc;
 }
 
 .campo > div {
   min-width: 0;
 }
 
+.ponto {
+  display: inline-block;
+  flex-shrink: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+}
+
+.ponto.origem {
+  background: #16a34a;
+}
+
+.ponto.destino {
+  background: #dc2626;
+}
+
 .campo label {
   display: block;
-  color: var(--cinza);
-  font-size: 12px;
   margin-bottom: 5px;
+  color: #64748b;
+  font-size: 12px;
 }
 
 .campo strong {
+  display: block;
   font-size: 12px;
   overflow-wrap: anywhere;
 }
 
-.ponto {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  flex-shrink: 0;
-}
-
-.origem {
-  background: #16a34a;
-}
-
-.destino {
-  background: var(--vermelho);
-}
+/* Botões */
 
 .botao-secundario {
-  border: none;
-  background: none;
-  color: var(--vermelho);
-  font-size: 13px;
-  padding: 12px 0;
+  margin-top: 13px;
+  width: 100%;
+  padding: 11px;
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  color: #475569;
   font-weight: 600;
 }
 
-.painel h3 {
-  font-size: 14px;
-  margin: 24px 0 12px;
+.botao-secundario:hover {
+  background: #f1f5f9;
 }
 
 .transportes {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
 
 .transporte {
+  min-height: 74px;
+  padding: 10px 4px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  padding: 14px 4px;
-  background: white;
-  border: 1px solid var(--borda);
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid #e2e8f0;
   border-radius: 12px;
+  background: white;
+  color: #475569;
   font-size: 12px;
-  color: var(--texto);
 }
 
 .transporte span:first-child {
-  font-size: 23px;
+  font-size: 22px;
+}
+
+.transporte:hover {
+  background: #fff7f7;
 }
 
 .transporte.selecionado {
-  border: 2px solid var(--vermelho);
-  background: var(--vermelho-claro);
-  color: var(--vermelho);
+  border: 2px solid #b91c1c;
+  background: #fff1f2;
+  color: #991b1b;
   font-weight: 700;
 }
 
+/* Horário e trânsito */
+
 .horario {
   width: 100%;
-  padding: 13px;
-  border: 1px solid var(--borda);
+  padding: 12px;
+  border: 1px solid #cbd5e1;
   border-radius: 10px;
   background: white;
-  color: var(--texto);
+  color: #1f2937;
 }
 
 .aviso {
-  background: var(--vermelho-claro);
-  border-left: 3px solid var(--vermelho);
-  padding: 14px;
-  margin: 24px 0;
-  border-radius: 6px;
+  margin-top: 18px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
 }
 
 .aviso strong {
   font-size: 13px;
+  color: #9a3412;
 }
 
 .aviso p {
-  margin: 6px 0 0;
-  color: #7f1d1d;
+  margin: 7px 0 0;
+  color: #9a3412;
   font-size: 12px;
   line-height: 1.6;
 }
 
 .botao-principal {
+  margin-top: 22px;
   width: 100%;
-  padding: 16px;
+  padding: 15px;
+  background: #b91c1c;
+  color: white;
   border: none;
   border-radius: 12px;
-  background: var(--vermelho);
-  color: white;
+  font-size: 14px;
   font-weight: 700;
+  transition: background 0.2s ease;
 }
 
-.botao-principal:hover {
-  background: var(--vermelho-escuro);
+.botao-principal:hover:not(:disabled) {
+  background: #991b1b;
+}
+
+.botao-principal:disabled {
+  opacity: 0.65;
+  cursor: wait;
 }
 
 .mensagem {
-  font-size: 12px;
-  color: var(--cinza);
-  line-height: 1.6;
+  margin: 14px 0;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #475569;
 }
 
 .rodape-painel {
-  margin-top: 32px;
-  border-top: 1px solid var(--borda);
-  padding-top: 16px;
-  color: var(--cinza);
-  font-size: 11px;
+  margin-top: 28px;
+  padding-top: 17px;
+  border-top: 1px solid #e5e7eb;
+  color: #94a3b8;
+  font-size: 12px;
 }
 
+/* Mapa */
+
 .area-mapa {
-  flex: 1;
-  min-width: 0;
   position: relative;
-  background: #e5e7eb;
+  min-width: 0;
+  min-height: 600px;
+  overflow: hidden;
+  background: #e2e8f0;
 }
 
 .mapa {
   width: 100%;
   height: 100%;
+  min-height: 600px;
   z-index: 1;
 }
 
 .mapa-instrucao {
   position: absolute;
-  top: 18px;
+  bottom: 22px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 400;
-  background: white;
-  padding: 12px 18px;
-  border-radius: 30px;
-  box-shadow: 0 3px 18px #0002;
-  font-size: 12px;
-  white-space: nowrap;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 9px;
+  padding: 12px 17px;
+  border-radius: 999px;
+  background: white;
+  color: #334155;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  white-space: nowrap;
   pointer-events: none;
 }
 
 .bolinha-vermelha {
   width: 9px;
   height: 9px;
-  background: var(--vermelho);
   border-radius: 50%;
+  background: #dc2626;
 }
 
-@media (max-width: 768px) {
-  .aplicacao {
-    height: auto;
-    min-height: 100vh;
+/* Resultado da rota */
+
+.resultado-rota {
+  margin-top: 18px;
+  padding: 18px;
+  background: #fff7f7;
+  border: 1px solid #fecaca;
+  border-radius: 14px;
+}
+
+.resultado-rota h3 {
+  margin: 0 0 14px;
+  color: #991b1b;
+  font-size: 16px;
+}
+
+.resultado-dados {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.resultado-dados > div {
+  padding: 12px;
+  background: white;
+  border-radius: 10px;
+}
+
+.resultado-dados span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 5px;
+}
+
+.resultado-dados strong {
+  display: block;
+  font-size: 20px;
+  color: #b91c1c;
+}
+
+.resultado-rota p {
+  margin: 14px 0 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #64748b;
+}
+
+/* Responsividade */
+
+@media (max-width: 900px) {
+  .conteudo {
+    grid-template-columns: 320px minmax(0, 1fr);
   }
 
+  .painel {
+    padding: 22px 16px;
+  }
+}
+
+@media (max-width: 700px) {
   .cabecalho {
-    height: 68px;
-    padding: 0 16px;
+    min-height: 76px;
+    padding: 14px 16px;
+  }
+
+  .identidade h1 {
+    font-size: 20px;
+  }
+
+  .simbolo {
+    width: 40px;
+    height: 40px;
   }
 
   .etiqueta {
@@ -319,24 +435,30 @@ button {
   }
 
   .conteudo {
+    display: flex;
     flex-direction: column;
   }
 
   .painel {
-    width: 100%;
     overflow: visible;
-    padding: 20px;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
   }
 
   .area-mapa {
-    height: 55vh;
-    min-height: 350px;
-    flex: none;
+    height: 65vh;
+    min-height: 400px;
+  }
+
+  .mapa {
+    height: 100%;
+    min-height: 400px;
   }
 
   .mapa-instrucao {
-    font-size: 10px;
-    max-width: 95%;
+    bottom: 15px;
+    max-width: calc(100% - 24px);
     white-space: normal;
+    text-align: center;
   }
 }

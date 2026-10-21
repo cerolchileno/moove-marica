@@ -1,5 +1,14 @@
 
-import { MapContainer, TileLayer, Marker, Popup, useMapEvents } from "react-leaflet";
+import { useEffect } from "react";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup,
+  Polyline,
+  useMap,
+  useMapEvents,
+} from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 
@@ -11,6 +20,7 @@ export type Ponto = {
 type Props = {
   origem: Ponto | null;
   destino: Ponto | null;
+  rota: [number, number][];
   onSelecionar: (ponto: Ponto) => void;
 };
 
@@ -41,9 +51,29 @@ function SeletorDePontos({
   return null;
 }
 
+function AjustarMapa({
+  rota,
+}: {
+  rota: [number, number][];
+}) {
+  const mapa = useMap();
+
+  useEffect(() => {
+    if (rota.length > 1) {
+      mapa.fitBounds(rota, {
+        padding: [40, 40],
+        maxZoom: 16,
+      });
+    }
+  }, [mapa, rota]);
+
+  return null;
+}
+
 export default function MaricaMap({
   origem,
   destino,
+  rota,
   onSelecionar,
 }: Props) {
   return (
@@ -59,6 +89,18 @@ export default function MaricaMap({
       />
 
       <SeletorDePontos onSelecionar={onSelecionar} />
+      <AjustarMapa rota={rota} />
+
+      {rota.length > 1 && (
+        <Polyline
+          positions={rota}
+          pathOptions={{
+            color: "#dc2626",
+            weight: 6,
+            opacity: 0.9,
+          }}
+        />
+      )}
 
       {origem && (
         <Marker

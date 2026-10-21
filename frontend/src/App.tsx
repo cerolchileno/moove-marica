@@ -1,9 +1,19 @@
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import MaricaMap, { type Ponto } from "./components/MaricaMap";
 import "./App.css";
 
 type Transporte = "caminhada" | "onibus" | "bicicleta";
+
+type ResultadoRota = {
+  algoritmo: string;
+  modalidade: string;
+  distancia_m: number;
+  tempo_min: number;
+  coordenadas: [number, number][];
+};
+
+const API_URL = "http://127.0.0.1:8000";
 
 function formatarPonto(ponto: Ponto | null) {
   if (!ponto) return "Clique no mapa para selecionar";
@@ -21,7 +31,22 @@ export default function App() {
     "Selecione a origem clicando no mapa."
   );
 
+  const [resultado, setResultado] =
+    useState<ResultadoRota | null>(null);
+  const [carregando, setCarregando] = useState(false);
+
+  const requisicaoAtual = useRef<AbortController | null>(null);
+
+  function cancelarRotaAnterior() {
+    requisicaoAtual.current?.abort();
+    requisicaoAtual.current = null;
+    setCarregando(false);
+    setResultado(null);
+  }
+
   function selecionarPonto(ponto: Ponto) {
+    cancelarRotaAnterior();
+
     if (!origem) {
       setOrigem(ponto);
       setMensagem("Agora selecione o destino.");
@@ -32,20 +57,76 @@ export default function App() {
   }
 
   function limpar() {
+    cancelarRotaAnterior();
     setOrigem(null);
     setDestino(null);
     setMensagem("Selecione a origem clicando no mapa.");
   }
 
-  function planejar() {
+  async function planejar() {
     if (!origem || !destino) {
       setMensagem("Selecione origem e destino primeiro.");
       return;
     }
 
-    setMensagem(
-      "Pontos definidos! O cálculo viário será integrado na próxima etapa."
-    );
+    if (transporte !== "caminhada") {
+      setMensagem(
+        "Por enquanto, o cálculo está disponível apenas para caminhada."
+      );
+      return;
+    }
+
+    cancelarRotaAnterior();
+
+    const controlador = new AbortController();
+    requisicaoAtual.current = controlador;
+
+    setCarregando(true);
+    setMensagem("Calculando a melhor rota pelas ruas de Maricá...");
+
+    try {
+      const resposta = await fetch(`${API_URL}/api/rotas`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        signal: controlador.signal,
+        body: JSON.stringify({
+          origem,
+          destino,
+        }),
+      });
+
+      if (!resposta.ok) {
+        const erro = await resposta.json().catch(() => null);
+
+        throw new Error(
+          erro?.detail || "Não foi possível calcular a rota."
+        );
+      }
+
+      const dados: ResultadoRota = await resposta.json();
+
+      if (requisicaoAtual.current !== controlador) return;
+
+      setResultado(dados);
+      setMensagem("Rota calculada com sucesso!");
+    } catch (erro) {
+      if (controlador.signal.aborted) return;
+
+      if (requisicaoAtual.current !== controlador) return;
+
+      setMensagem(
+        erro instanceof Error
+          ? erro.message
+          : "Erro ao conectar com o servidor."
+      );
+    } finally {
+      if (requisicaoAtual.current === controlador) {
+        requisicaoAtual.current = null;
+        setCarregando(false);
+      }
+    }
   }
 
   return (
@@ -54,7 +135,7 @@ export default function App() {
         <div className="identidade">
           <div className="simbolo">M</div>
           <div>
-            <h1>moove maricá</h1>
+            <h1>Moove Marica</h1>
             <p>Sua cidade em movimento.</p>
           </div>
         </div>
@@ -87,7 +168,10 @@ export default function App() {
             </div>
           </div>
 
-          <button className="botao-secundario" onClick={limpar}>
+          <button
+            className="botao-secundario"
+            onClick={limpar}
+          >
             Limpar pontos
           </button>
 
@@ -106,7 +190,15 @@ export default function App() {
                     ? "transporte selecionado"
                     : "transporte"
                 }
-                onClick={() => setTransporte(id)}
+                onClick={() => {
+                  cancelarRotaAnterior();
+                  setTransporte(id);
+                  setMensagem(
+                    id === "caminhada"
+                      ? "Modo caminhada selecionado."
+                      : "Modalidade em desenvolvimento."
+                  );
+                }}
                 aria-pressed={transporte === id}
               >
                 <span>{icone}</span>
@@ -127,19 +219,54 @@ export default function App() {
           <div className="aviso">
             <strong>Trânsito inteligente</strong>
             <p>
-              Na próxima etapa, os horários serão utilizados
-              na simulação de trânsito.
+              Em breve, os horários serão utilizados na
+              simulação de trânsito.
             </p>
           </div>
 
-          <button className="botao-principal" onClick={planejar}>
-            Planejar minha rota →
+          <button
+            className="botao-principal"
+            onClick={planejar}
+            disabled={carregando}
+          >
+            {carregando
+              ? "Calculando rota..."
+              : "Planejar minha rota →"}
           </button>
 
-          <p className="mensagem" role="status">{mensagem}</p>
+          <p className="mensagem" role="status">
+            {mensagem}
+          </p>
+
+          {resultado && (
+            <div className="resultado-rota">
+              <h3>Resumo da sua rota</h3>
+
+              <div className="resultado-dados">
+                <div>
+                  <span>Distância</span>
+                  <strong>
+                    {(resultado.distancia_m / 1000).toFixed(2)} km
+                  </strong>
+                </div>
+
+                <div>
+                  <span>Tempo estimado</span>
+                  <strong>
+                    {resultado.tempo_min.toFixed(1)} min
+                  </strong>
+                </div>
+              </div>
+
+              <p>
+                Calculado com {resultado.algoritmo} sobre a
+                rede de ruas do OpenStreetMap.
+              </p>
+            </div>
+          )}
 
           <div className="rodape-painel">
-            Moove Maricá · HackTown
+            Moove Marica · HackTown
           </div>
         </aside>
 
@@ -147,6 +274,7 @@ export default function App() {
           <MaricaMap
             origem={origem}
             destino={destino}
+            rota={resultado?.coordenadas ?? []}
             onSelecionar={selecionarPonto}
           />
 
