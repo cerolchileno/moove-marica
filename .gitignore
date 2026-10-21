@@ -35,3 +35,7 @@ backend/data/*.graphml
 
 # Cache de compilação TypeScript
 *.tsbuildinfo
+
+# Dados brutos utilizados para gerar os mapas
+backend/data/extracoes/
+backend/data/*.osm.pbf
