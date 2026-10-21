@@ -462,3 +462,172 @@ button {
     text-align: center;
   }
 }
+
+
+/* ==========================================
+   MOOVE MARICA - BUSCA DE ENDEREÇOS
+   ========================================== */
+
+.pesquisas-endereco {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 24px 0;
+}
+
+.busca-endereco {
+  width: 100%;
+  min-width: 0;
+}
+
+.busca-endereco form {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.busca-endereco label {
+  display: block;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.busca-linha {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+}
+
+.busca-linha input {
+  flex: 1;
+  width: 100%;
+  min-width: 0;
+  height: 44px;
+  padding: 0 13px;
+
+  background: #ffffff;
+  color: #1e293b;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-size: 13px;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.busca-linha input::placeholder {
+  color: #94a3b8;
+}
+
+.busca-linha input:focus {
+  outline: none;
+  border-color: #b91c1c;
+  box-shadow: 0 0 0 3px rgba(185, 28, 28, 0.12);
+}
+
+.busca-linha button {
+  flex-shrink: 0;
+  height: 44px;
+  padding: 0 15px;
+
+  background: #b91c1c;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 10px;
+
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.busca-linha button:hover:not(:disabled) {
+  background: #991b1b;
+  transform: translateY(-1px);
+}
+
+.busca-linha button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.busca-resultados {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  margin-top: 9px;
+  max-height: 230px;
+  overflow-y: auto;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+.busca-resultados button {
+  width: 100%;
+  padding: 12px 13px;
+
+  background: #ffffff;
+  color: #334155;
+
+  border: none;
+  border-bottom: 1px solid #f1f5f9;
+
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
+  overflow-wrap: anywhere;
+
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.busca-resultados button:last-child {
+  border-bottom: none;
+}
+
+.busca-resultados button:hover {
+  background: #fff1f2;
+  color: #991b1b;
+}
+
+.busca-erro {
+  margin: 8px 0 0;
+  color: #b91c1c;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* Ajustes para telas menores */
+
+@media (max-width: 480px) {
+  .pesquisas-endereco {
+    gap: 15px;
+    margin: 18px 0;
+  }
+
+  .busca-linha input {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .busca-linha button {
+    padding: 0 12px;
+  }
+}
