@@ -1,0 +1,10 @@
+{
+  "registros": 49,
+  "codigos_unicos": 48,
+  "itinerarios": 88,
+  "avisos": [
+    "E30E: itinerário sem sentido identificado",
+    "E30E: itinerário sem sentido identificado",
+    "E30E: 2 registros com o mesmo código"
+  ]
+}

@@ -1,0 +1,894 @@
+{
+  "fonte": "itinerarios_ept",
+  "tipo": "extracao_textual_preliminar",
+  "itinerarios": [
+    {
+      "id": "E01_1_1",
+      "codigo": "E01",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 106 (SENTIDO SAQUAREMA) – ESTRADA SAMPAIO CORREIA-JACONÉ – RUA SÃO PEDRO APÓSTOLO – PRAÇA DE PONTA NEGRA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E01_1_2",
+      "codigo": "E01",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "PRAÇA DE PONTA NEGRA – AV. PREFEITO ARTURZINHO RANGEL – RUA SÃO PEDRO APÓSTOLO – ESTRADA SAMPAIO CORREIA-JACONÉ – RJ 106 (SENTIDO SAQUAREMA) – RETORNO – RJ 106 (SENTIDO NITERÓI) – RETORNO KM 30 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA - RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E01A_2_1",
+      "codigo": "E01A",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA - RJ 106 (SENTIDO SAQUAREMA) - RUA VINTE - RUA QUINZE - ESTRADA SAMPAIO CORREIA-JACONÉ - RUA SÃO PEDRO APOSTOLO - PRAÇA DE PONTA NEGRA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E01A_2_2",
+      "codigo": "E01A",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "PRAÇA DE PONTA NEGRA - AV. PREFEITO ARTUZINHO RANGEL - RUA SÃO PEDRO APOSTÓLO - ESTRADA SAMPAIO CORREIA-JACONÉ - RJ 106 (SENTIDO SAQUAREMA) - RUA VINTE - RUA QUINZE - ESTRADA SAMPAIO CORREIA-JACONÉ - RJ 106 (SENTIDO SAQUAREMA) - RETORNO - RJ 106 (SENTIDO NITERÓI) - RETORNO KM 30 - RJ 106 (SENTIDO SAQUAREMA) - AV. ROBERTO SILVEIRA - R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA - RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E02_3_1",
+      "codigo": "E02",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RUA ABREU SODRÉ – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV NOSSA SENHORA DO AMPARO – AV. IVAN MUNDIM – AV. JOÃO SALDANHA – RUA ZERO – AV. MAYSA – ESTRADA ANTÔNIO CALLADO (RUA 90) – PRAÇA DE BAMBUÍ – ESTRADA DO CONTORNO - AV. BRAULINO VENÂNCIO DA COSTA - ESTRADA ANTÔNIO CALLADO – RUA CENTO E SETE – AV. MAYSA – AV. PREFEITO ARTURZINHO RANGEL – RUA CAP. JOSÉ CAETANO DE OLIVEIRA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E02_3_2",
+      "codigo": "E02",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA CAP. JOSÉ CAETANO DE OLIVEIRA – RUA DO CANAL – RUA DOZE – AV. MAYSA – AV. REGINALDO ZEIDAN (BEIRA LAGOA/ALTURA R.141) – RUA CENTO E SETE – ESTRADA ANTÔNIO CALLADO – PRAÇA DE BAMBUÍ – ESTRADA DO CONTORNO - AV. BRAULINO VENÂNCIO DA COSTA - ESTRADA ANTÔNIO CALLADO – RUA CENTO E SETE – AV. REGINALDO ZEIDAN (BEIRA LAGOA) – AV. MAYSA – RUA TREZE – AV. JOÃO SALDANHA – AV. IVAN MUNDIM – RUA LÚCIO ALVES DA SILVA – RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLÍMACO PEREIRA – RUA SOARES SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA - RODOVIÁRIA"
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E02A_4_1",
+      "codigo": "E02A",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RUA ABREU SODRÉ – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV NOSSA SENHORA DO AMPARO – AV. IVAN MUNDIM – AV. JOÃO SALDANHA – RUA ZERO – AV. MAYSA – AV. PREFEITO ARTURZINHO RANGEL – RUA CAP. JOSÉ CAETANO DE OLIVEIRA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E02A_4_2",
+      "codigo": "E02A",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA CAP. JOSÉ CAETANO DE OLIVEIRA – RUA DO CANAL – RUA DOZE – AV. MAYSA – AV. REGINALDO ZEIDAN (BEIRA LAGOA) – AV. MAYSA – RUA TREZE – AV. JOÃO SALDANHA – AV. IVAN MUNDIM – RUA LÚCIO ALVES DA SILVA – RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLÍMACO PEREIRA – RUA SOARES SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA - R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA - RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E03_5_1",
+      "codigo": "E03",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ-114 – RUA FIRMIANO FRANCISCO DE FIGUEIREDO – RUA RIO DE JANEIRO – RUA LEÔNIDAS MOREIRA – RUA NOVA FRIBURGO – RUA VOLTA REDONDA ."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E03_5_2",
+      "codigo": "E03",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA VOLTA REDONDA – RUA NOVA FRIBURGO – RUA LEÔNIDAS MOREIRA – RUA RIO DE JANEIRO – RUA FIRMIANO FRANCISCO DE FIGUEIREDO – RJ-114 – RJ 106 (SENTIDO NITERÓI) – RETORNO KM 30 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA - RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E04_6_1",
+      "codigo": "E04",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ-114 – ESTRADA DO SILVADO (COMANDANTE CELSO)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E04_6_2",
+      "codigo": "E04",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "ESTRADA DO SILVADO (COMANDANTE CELSO) – RJ-114 – RJ 106 (SENTIDO NITERÓI) – RETORNO KM 30 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E05_7_1",
+      "codigo": "E05",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 114 – RJ-114 (KM 18 – COLÉGIO JOVINA AMARAL)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E05_7_2",
+      "codigo": "E05",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E06_8_1",
+      "codigo": "E06",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ-106 (SENTIDO SAQUAREMA) – ESTRADA DO ESPRAIADO - SÍTIO DO RIACHO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E06_8_2",
+      "codigo": "E06",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "ESTRADA DO ESPRAIADO – RJ 106 (SENTIDO NITERÓI) – RETORNO KM 30 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E07_9_1",
+      "codigo": "E07",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 106 (SENTIDO NITERÓI) – ESTRADA DO CAXITO - RUA CECILIA GONÇALVES MATARUNA - ESTRADA HENFIL (Sentido Condomínio Vitória dos Anjos) - ESTRADA DO CAXITO (retorno) - ESTRADA HENFIL (Sentido Alecrim) ESTRADA DO CAMBURI."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E07_9_2",
+      "codigo": "E07",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "ESTRADA DO CAMBURI - ESTRADA HENFIL - RUA CECÍLIA GONÇALVES MATARUNA – ESTRADA DO CAXITO – RJ 106 (SENTIDO NITERÓI) – RETORNO KM 28 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA - R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA"
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E08_10_1",
+      "codigo": "E08",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RUA ABREU SODRÉ – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV NOSSA SENHORA DO AMPARO – RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLÍMACO PEREIRA – RUA PREFEITO JOAQUIM MENDES – RUA ANTÔNIO GOMES – RUA REGINALDO G. DA FONSECA – AVENIDA TRÊS – RUA PREFEITO JOAQUIM MENDES – ESTRADA DE JACAROÁ – PRAÇA DO NENÉM – RUA OUVÍDIO SOUZA – AVENIDA DIÓGENES PAULA COSTA (AV. LAGOMAR) – CAMPO DO CAJU."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E08_10_2",
+      "codigo": "E08",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "ESTRADA DO CAJU – ESTRADA ZILTO MONTEIRO DE ABREU – PRAÇA DO NENÉM – ESTRADA DO JACAROÁ – RUA PREFEITO JOAQUIM MENDES – AVENIDA TRÊS – RUA REGINALDO G. DA FONSECA – RUA ANTÔNIO GOMES – RUA PREFEITO JOAQUIM MENDES – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E08A_11_1",
+      "codigo": "E08A",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RUA ABREU SODRÉ – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV NOSSA SENHORA DO AMPARO – RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLÍMACO PEREIRA – RUA PREFEITO JOAQUIM MENDES – RUA ANTÔNIO GOMES – RUA REGINALDO G. DA FONSECA – AVENIDA TRÊS – RUA PREFEITO JOAQUIM MENDES – ESTRADA DE JACAROÁ – PRAÇA DO NENÉM – ESTR. ZILTO MONTEIRO DE ABREU – CAMPO DO CAJU."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E08A_11_2",
+      "codigo": "E08A",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. NERO DA SILVA BITTENCOURT – RUA OUVÍDIO SOUZA – ESTRADA DE JACAROÁ – RUA PREFEITO JOAQUIM MENDES – AVENIDA TRÊS – RUA REGINALDO G. DA FONSECA – RUA ANTÔNIO GOMES – RUA PREFEITO JOAQUIM MENDES – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E09_12_1",
+      "codigo": "E09",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RUA ABREU SODRÉ – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV NOSSA SENHORA DO AMPARO – RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLÍMACO PEREIRA – RUA PREFEITO JOAQUIM MENDES – ESTRADA DO JACAROÁ – PRAÇA DO NENÉM – ESTRADA ZILTO MONTEIRO DE ABREU – ESTRADA DO CAJU – ESTRADA DA GAMBOA – AV. UM LOT. JD. INTERLAGOS (SENT. PONTE PRETA) – ESTRADA DA PONTE NEGRA – ESTRADA BEIRA DA LAGOA – AV. ALZIRO RODRIGUES DE MOURA – AV. FABIANO FERREIRA DOS ANTOS MEDEIROS – RUA DOIS – AV. REGINALDO ZEIDAN – ESTRADA BEIRA DA LAGOA – RUA 32 – AV. MAYSA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E09_12_2",
+      "codigo": "E09",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. MAYSA – RUA 56 – ESTRADA BEIRA DA LAGOA – ESTRADA DA PONTE NEGRA – AV. UM (BEIRA DA LAGOA – LADO LESTE) – RUA CENTO E DEZ – AV. UM LOT. JD INTERLAGOS (SENT. CENTRO) – ESTRADA DA GAMBOA – ESTRADA DO CAJU – ESTRADA ZILTO MONTEIRO DE ABREU – PRAÇA DO NENÉM – ESTRADA DO JACAROÁ – RUA PREFEITO JOAQUIM MENDES – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E09A_13_1",
+      "codigo": "E09A",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RUA ABREU SODRÉ – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV NOSSA SENHORA DO AMPARO – RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLÍMACO PEREIRA – RUA PREFEITO JOAQUIM MENDES – ESTRADA DO JACAROÁ – PRAÇA DO NENÉM –ESTRADA ZILTO MONTEIRO DE ABREU – ESTRADA DO CAJU – ESTRADA DA GAMBOA – AV. UM LOT. JD. INTERLAGOS (SENT. PONTE PRETA) – RUA CENTO E DEZ – AV. UM (BEIRA DA LAGOA – LADO LESTE) – ESTRADA DA PONTE NEGRA – ESTRADA DA LAGOA - AV. ALZIRO RODRIGUES DE MOURA – AV. FABIANO FERREIRA DOS SANTOS MEDEIROS – RUA DOIS – AV. REGINALDO ZEIDAN – ESTRADA BEIRA DA LAGOA – RUA 32 – AV. MAYSA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E09A_13_2",
+      "codigo": "E09A",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. MAYSA – RUA 56 – ESTRADA BEIRA DA LAGOA – ESTRADA DA PONTE NEGRA – AV. UM - LOT. JD INTERLAGOS (SENT. CENTRO) – ESTRADA DA GAMBOA – ESTRADA DO CAJU – ESTRADA ZILTO MONTEIRO DE ABREU – PRAÇA DO NENÉM – ESTRADA DO JACAROÁ – RUA PREFEITO JOAQUIM MENDES – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E10_14_1",
+      "codigo": "E10",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 106 (SENTIDO SAQUAREMA) – ESTR. ANTÔNIO CALLADO – AVENIDA DO CONTORNO – AV. BRAULINO VENÂNCIO DA COSTA - ESTR. ANTÔNIO CALLADO (RUA 90) – AV. MAYSA – RUA 107 (ESQ C/ R.10)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E10_14_2",
+      "codigo": "E10",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA 107 (ESQ C/ R.10) – RUA 107 – ESTR. ANTÔNIO CALLADO – RJ 106 (SENTIDO NITERÓI) – RETORNO KM 30 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E10A_15_1",
+      "codigo": "E10A",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 106 (SENTIDO SAQUAREMA) – ESTR. ANTÔNIO CALLADO – AV. PARK WAY – R. 120 – R 119 – AV. F – AV. DO CONTORNO – AV. BRAULINO VENÂNCIO DA COSTA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E10A_15_2",
+      "codigo": "E10A",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. DO CONTORNO – PRAÇA DE BAMBUÍ - AV. DO CONTORNO - AV. F – R. 119 – R. 120 – AV. PARK WAY – ESTR. ANTÔNIO CALLADO – RJ 106 (SENTIDO NITERÓI) – RETORNO KM 30 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E10B_16_1",
+      "codigo": "E10B",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RUA ARI SPINDOLA - RUA SOARES DE SOUZA - RUA PREF. JOAQUIM MENDES - RUA LUIZ FERNANDO DOS SANTOS CAETANO – ESTR. DE JACAROÁ – ESTR. DO CAJU – RUA OSCARINO FRANCISCO DA COSTA (AV. BAMBUÍ - LOT CH. DE BAMBUÍ II) – ESTR. ANTÔNIO CALLADO – AV. PARK WAY – AV. A – RUA 18 – RUA 80 – AV. BRAULINO VENÂNCIO DA COSTA – RUA 80A – AV DO CONTORNO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E10B_16_2",
+      "codigo": "E10B",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. BRAULINO VENÂNCIO DA COSTA – AV. A – AV. PARK WAY – ESTRADA ANTÔNIO CALLADO – RUA OSCARINO FRANCISCO DA COSTA (AV. BAMBUÍ - LOT CH. DE BAMBUÍ II) – ESTR. DO CAJU – ESTR. DE JACAROÁ – RUA LUIZ FERNANDO DOS SANTOS CAETANO – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E11_17_1",
+      "codigo": "E11",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RUA ARI SPINDOLA – RUA SOARES DE SOUZA – RUA DOMÍCIO DA GAMA – RUA ABREU RANGEL – AV. VEREADOR FRANCISCO SABINO DA COSTA – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA DR. MILTON DE SOUZA PACHECO – RUA PREFEITO HILÁRIO DA COSTA E SILVA – RUA ALBERTO RANGEL – RUA FERNANDO HENRIQUE ASSUMPÇÃO – RUA ALVARES DE CASTRO – RUA JOVINO DUARTE DE OLIVEIRA – FÓRUM COMARCA DE MARICÁ – RUA ALVARES DE CASTRO - PRAÇA TIRADENTES."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E11_17_2",
+      "codigo": "E11",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "PRAÇA TIRADENTES – RUA ÁLVARES DE CASTRO – RUA ALMEIDA FAGUNDES – AV. NOSSA SRA. DO AMPARO – RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLÍMACO PEREIRA – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E12_18_1",
+      "codigo": "E12",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RUA ABREU SODRÉ – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV NOSSA SENHORA DO AMPARO – AV. IVAN MUNDIM – ESTRADA DE ZACARIAS – RUA MARILENE RANGEL DA CRUZ VIEIRA – AV. MAYSA – RUA THEODORO JOSÉ DE MARINS – ESTRADA DE ZACARIAS – AV. JOÃO SALDANHA – RUA ZERO – AV. MAYSA – RUA TREZE – RUA IRMÃOS COUTINHO – RUA DEZESSETE – RUA ASSIS COELHO DA SILVA – RUA SETE – RUA QUATRO – AV. JOÃO SALDANHA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E12_18_2",
+      "codigo": "E12",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. JOÃO SALDANHA – ESTRADA DE ZACARIAS – RUA THEODORO JOSÉ DE MARINS PEREIRA – AV. MAYSA – RUA MARILENE RANGEL DA CRUZ VIEIRA – ESTRADA DE ZACARIAS – AV. IVAN MUNDIN – RUA LÚCIO ALVES DA SILVA – RUA CLÍMACO PEREIRA – RUA DOMÍCIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLÍMACO PEREIRA – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E13_19_1",
+      "codigo": "E13",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RUA ABREU SODRÉ – ESTRADA VELHA DE MARICÁ – RUA ALBATROZ – RUA CONDOR – ESTRADA VELHA DE MARICÁ – RUA JUIZ OSWALDO LIMA RODRIGUES – RUA BEIJA FLOR – RUA MANDARIM – RUA DAS ÁGUIAS – PRAÇA DO PARQUE NANCI (PONTO FINAL)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E13_19_2",
+      "codigo": "E13",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. DOS POMBOS – RUA CONDOR – RUA ALBATROZ – ESTRADA VELHA DE MARICÁ – RUA VEREADOR ALOISIO RANGEL DE FREITAS – RUA ANTÔNIO JOSÉ DA CRUZ – RUA F – RUA VEREADOR ALOISIO RANGEL DE FREITAS – ESTRADA VELHA DE MARICÁ – RUA ABREU SODRÉ – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV. NOSSA SENHORA DO AMPARO – RUA LÚCIO ALVES DA SILVA – RUA CLÍMACO PEREIRA – RUA DOMÍCIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLÍMACO PEREIRA – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E14_20_1",
+      "codigo": "E14",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 106 (SENTIDO SAQUAREMA) – ESTRADA DE SAMPAIO CORREIA SENTIDO SAQUAREMA (RJ 118) – AV. A – AV. BEIRA MAR SENTIDO SAQUAREMA – RUA 57."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E14_20_2",
+      "codigo": "E14",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA 57 – AV. BEIRA MAR SENTIDO PONTA NEGRA – AV. DOIS (ESTRADA DA COREIA) – ESTRADA DE SAMPAIO CORREIA SENTIDO SAQUAREMA (RJ 118) – CONDOMÍNIO VILLAGIO DEL SOLE 2 – ESTRADA DE SAMPAIO CORREIA SENTIDO PONTA NEGRA (RJ 118) – RJ 106 (SENTIDO SAQUAREMA) – RETORNO – RJ 106 (SENT. NITERÓI) – RETORNO KM 30 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E14A_21_1",
+      "codigo": "E14A",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 106 (SENTIDO SAQUAREMA) – ESTRADA DE SAMPAIO CORREIA SENTIDO SAQUAREMA (RJ 118) – RUA SÃO PEDRO APÓSTOLO – PRAÇA DE PONTA NEGRA – ESTRADA DE JACONÉ – ESTRADA DE SAMPAIO CORREIA SENTIDO SAQUAREMA (RJ 118) – CONDOMÍNIO VILLAGIO DEL SOLE 2 – ESTRADA DE SAMPAIO CORREIA SENTIDO PONTA NEGRA (RJ 118) – AV. DOIS (ESTRADA DA COREIA) – AV. A (AV. BEIRA MAR) SENTIDO SAQUAREMA – RUA 57."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E14A_21_2",
+      "codigo": "E14A",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA 57 – AV. A (AV. BEIRA MAR) SENTIDO PONTA NEGRA – RJ 102 – ESTRADA DE SAMPAIO CORREIA SENTIDO PONTA NEGRA (RJ 118) – ESTRADA DE JACONÉ – PRAÇA DE PONTA NEGRA – RUA SÃO PEDRO APÓSTOLO – ESTRADA DE SAMPAIO CORREIA SENTIDO MARICÁ (RJ 118) – RJ 106 (SENTIDO SAQUAREMA) – RETORNO – RJ 106 (SENT. NITERÓI) – RETORNO KM 30 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E15_22_1",
+      "codigo": "E15",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 106 (SENTIDO NITERÓI) – ESTRADA DO RETIRO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E15_22_2",
+      "codigo": "E15",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "ESTRADA DO RETIRO – RJ 106 (SENTIDO NITERÓI) – RETORNO KM22 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E15A_23_1",
+      "codigo": "E15A",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 106 (SENTIDO NITERÓI) – ESTRADA JOAQUIM AFONSO VIANA – ESTRADA DO RETIRO – RUA ONZE (ESTR. DO RETIRO) – RUA 5 – ESTRADA DO RETIRO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E15A_23_2",
+      "codigo": "E15A",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "ESTRADA DO RETIRO – RJ 106 (SENTIDO NITERÓI) – RETORNO KM 22 – RJ 106 (SENTIDO SAQUAREMA) – AV. ROBERTO SILVEIRA – RUA ARI SPINDOLA – RUA SOARES DE SOUZA – RUA CLIMACO PEREIRA – RUA DOMICIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLIMACO PEREIRA – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E16_24_1",
+      "codigo": "E16",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA - RJ 106 (SENTIDO SAQUAREMA) - RETORNO - RJ 106 (SENTIDO NITERÓI) - RETORNO - RJ 106 (SENTIDO MARICÁ) - AV. MARAJÓ - ESTRADA VELHA DE MARICÁ - AV. PREF. ALCEBÍADES MENDES - RUA JOÃO RIZZO - ESTRADA CATUMBI - RUA QUATORZE - RUA VINTE E CINCO - RUA VINTE E OITO - RUA DO CANAL."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E16_24_2",
+      "codigo": "E16",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA NOVE - ESTRADA DO CATUMBI - RJ 106 (SENTIDO MARICÁ) - AV. ROBERTO SILVEIRA - RUA MARIO LOPES DA FONTOURA - RUA VEREADOR LUIZ ANTÔNIO DA CUNHA - RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E17_25_1",
+      "codigo": "E17",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – R. MARQUÊS DE SAPUCAÍ – R. MARQUÊS DE MARICÁ – R. MARÁ DE SV – R. BARÃO DE DRUMONT – R. MARQUÊS DE POMBAL – R. MARQUÊS DE PARANA – R. MARQUÊS DE CAXIAS – RJ 106 SENTIDO SAQUAREMA – ALAMEDA MARICÁ – R. HIBISCO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E17_25_2",
+      "codigo": "E17",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "ALAMEDA MARICÁ – R. FLABOYANT – R. CARVALHO – ALAMEDA MARICÁ – RJ 106 (SENTIDO NITERÓI) – RETORNO KM 30 – RJ 106 SENTIDO SAQUAREMA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E20_26_1",
+      "codigo": "E20",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "ESTRADA DOS CAJUEIROS – RUA CIRCULAR – RUA SESSENTA E TRÊS - AV. JARDEL FILHO - RUA HÉLIO GUAPYASSU DE SÁ (RUA 66) – RUA ANTÔNIO MARQUES MATHIAS (RUA 36) – PF RUA 128."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E20_26_2",
+      "codigo": "E20",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA 128 – RUA GOVERNADOR LEONEL BRIZOLA (RUA 35) – RUA DOUGLAS MARQUES RIENTI (RUA 83) – RUA ANTÔNIO MARQUES MATHIAS (RUA 36) – RUA HÉLIO GUAPYASSU DE SÁ (RUA 66) – RUA CIRCULAR – ESTRADA DOS CAJUEIROS – RJ 106 (SENT. MARICÁ) – RETORNO KM 19 – RJ 106 (SENT. NITERÓI) – RETORNO KM 12 – RJ 106 (SENT. MARICÁ) – PF PASSARELA INOÃ (SENT. MARICÁ)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E21_27_1",
+      "codigo": "E21",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. CAIO FIGUEIREDO – TRAVESSA CAMPOS – RUA CARLOS MARIGUELLA – AV. ITAOCAIA VALLEY – RUA DEZOITO – ESTRADA DE ITAIPUAÇU – RUA CARLOS MARIGUELLA – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA VAN LERBERGUE – AV. ZUMBI DOS PALMARES – PRAÇA DO BARROCO – AV. VITÓRIA RÉGIA – RUA SANTA JOANA D ´ARC – RUA ANTÔNIO MODESTO DE SÁ – RUA CAP. MELLO – AV. DO CANAL – PF RECANTO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E21_27_2",
+      "codigo": "E21",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. DO CANAL – RUA CAP. MELLO – RUA ANTÔNIO MODESTO DE SÁ – RUA SANTA JOANA D ´ARC – AV. VITÓRIA RÉGIA – PRAÇA DO BARROCO – AV. ZUMBI DOS PALMARES – RUA VAN LERBERGUE – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA 42 - RUA DA PAZ – RUA CARLOS MARIGUELLA – ESTRADA DE ITAIPUAÇU – RUA DEZOITO – AV. ITAOCAIA VALLEY – RUA CARLOS MARIGUELLA – AV. CAIO FIGUEIREDO – RJ 106 (SENT. MARICÁ) – RETORNO KM 17 – RJ 106 (SENT. NITERÓI) – PF PASSARELA INOÃ (SENT. NITERÓI)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E22_28_1",
+      "codigo": "E22",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ORESTES VEREZA LUÍS GENÉSIO – RUA CASSOROTIBA – ESTRADA DE CASSOROTIBA – PF CASSOROTIBA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E22_28_2",
+      "codigo": "E22",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "ESTRADA DE CASSOROTIBA – RUA CASSOROTIBA – AV. ORESTES VEREZA LUÍS GENÉSIO – RJ 106 (SENT. NITERÓI) – RETORNO KM 12 – RJ 106 (SENT. MARICÁ) – RETORNO KM 17 – RJ 106 (SENT. NITERÓI) – PF PASSARELA INOÃ (SENT. NITERÓI)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E23_29_1",
+      "codigo": "E23",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ORESTES VEREZA LUÍS GENÉSIO – RUA CASSOROTIBA – ESTRADA DE CASSOROTIBA – PF SANTA PAULA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E23_29_2",
+      "codigo": "E23",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "ESTRADA DE CASSOROTIBA – RUA CASSOROTIBA – AV. ORESTES VEREZA LUÍS GENÉSIO – RJ 106 (SENT. NITERÓI) – RETORNO KM 12 – RJ 106 (SENT. MARICÁ) – RETORNO KM 17 – RJ 106 (SENT. NITERÓI) – PF PASSARELA INOÃ (SENT. NITERÓI)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E24_30_1",
+      "codigo": "E24",
+      "sentido": "circular",
+      "ruas_candidatas": [
+        "RUA EURIPEDES RANGEL – ESTRADA VELHA DE MARICÁ – AVENIDA GUARUJÁ – RJ 106 – AVENIDA ROBERTO SILVEIRA – RUA ARI SPINDOLA – RUA SOARES DE SOUZA – RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA ABREU RANGEL – AV. VEREADOR FRANCISCO SABINO DA COSTA - RJ 106 (SENTIDO REGIÃO DOS LAGOS) – RETORNO KM 28 – RJ 106 (SENTIDO NITERÓI RETORNO KM 12 – RJ 106 (SENTIDO REGIÃO DOS LAGOS) – PONTO FINAL (PASSARELA DE INOÃ)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E24A_31_1",
+      "codigo": "E24A",
+      "sentido": "circular",
+      "ruas_candidatas": [
+        "RUA EURIPEDES RANGEL – ESTRADA VELHA DE MARICÁ – AVENIDA GUARUJÁ – RJ 106 – AV. VEREADOR FRANCISCO SABINO DA COSTA – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV NOSSA SENHORA DO AMPARO - RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA AVENIDA – RUA PADRE ARLINDO VIEIRA – RUA CLÍMACO PEREIRA – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA (SENTIDO RJ106) – RJ 106 (SENTIDO SAQUAREMA) - RETORNO KM 32 – RJ 106 (SENTIDO INOÃ) – RETORNO KM 12 – PONTO FINAL (PASSARELA DE INOÃ)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E25_32_1",
+      "codigo": "E25",
+      "sentido": "ida",
+      "ruas_candidatas": [],
+      "quantidade_ruas": 0,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E25_32_2",
+      "codigo": "E25",
+      "sentido": "volta",
+      "ruas_candidatas": [],
+      "quantidade_ruas": 0,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E25A_33_1",
+      "codigo": "E25A",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ORESTES VEREZA LUÍS GENÉSIO – RUA CASSOROTIBA – ESTRADA DE CASSOROTIBA – PF SANTA PAULA – ESTRADA DE CASSOROTIBA – RUA CASSOROTIBA – AV. ORESTES VEREZA LUÍS GENÉSIO – RJ 106 (SENT. NITERÓI) – RETORNO KM 12 – RJ 106 (SENT. MARICÁ)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E25A_33_2",
+      "codigo": "E25A",
+      "sentido": "volta",
+      "ruas_candidatas": [],
+      "quantidade_ruas": 0,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E26_34_1",
+      "codigo": "E26",
+      "sentido": "circular",
+      "ruas_candidatas": [
+        "RODOVIA (RJ 106 – VIA AUXILIAR SENT NITERÓI/PASSARELA) – RUA EUCLIDES PAULO DA SILVA – AV. DO CONTORNO – RUA SETE – RUA DEZOITO – ESTRADA DO BOSQUE FUNDO – MCMV INOÃ – ESTRADA DO BOSQUE FUNDO – RUA VINTE – RUA SETE – RUA DOUTOR JOÃO GOMES – RODOVIA AMARAL PEIXOTO (RJ 106 – SENT NITERÓI) – RETORNO KM 13 – RJ 106 (SENTIDO CENTRO MARICÁ) – AV. CAIO FIGUEIREDO – TRAVESSA CAMPOS – RUA CARLOS MARIGUELLA – RUA X – MCMV ITAIPUAÇU – RUA X – RUA CARLOS MARIGUELLA – AV. CAIO FIGUEIREDO – RJ 106 (SENTIDO CENTRO MARICÁ) – RETORNO KM 16 – RJ 106 (SENTIDO NITERÓI) – RODOVIA (VIA AUXILIAR/PASSARELA)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E27_35_1",
+      "codigo": "E27",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. MONSENHOR EMERSON DE NEGREIRO – RUA CHICO MENDES – RUA VINTE E SETE – RUA VINTE E OITO – RUA P."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E27_35_2",
+      "codigo": "E27",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA X – AV. CARLOS MARIGUELLA – RUA CAIO FIGUEIREDO – RJ 106 – PF PASSARELA INOÃ (SENT. MARICÁ)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E28_36_1",
+      "codigo": "E28",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "ESTRADA DOS CAJUEIROS – RUA CIRCULAR – RUA SESSENTA E TRÊS – AV. JARDEL FILHO – RUA PROF. CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E28_36_2",
+      "codigo": "E28",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA CARDOSO DE MENEZES – AV. CARLOS MARIGUELLA – AV. GILBERTO DE CARVALHO – RJ 106 – PF PASSARELA INOÃ (SENT. MARICÁ)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E30_37_1",
+      "codigo": "E30",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 106 (SENTIDO SAQUAREMA) - RETORNO KM 32 – RJ 106 (SENTIDO INOÃ) – RETORNO KM 13 – RJ 106 (SENT. MARICÁ) – AV. CAIO FIGUEIREDO – TRAVESSA CAMPOS – RUA CARLOS MARIGUELLA – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA VAN LERBERGUE – AV. ZUMBI DOS PALMARES – PRAÇA DO BARROCO – AV. VITÓRIA RÉGIA – RUA SANTA JOANA D ´ARC – RUA ANTÔNIO MODESTO DE SÁ – RUA CAP. MELLO – AV. DO CANAL – PF RECANTO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E30_37_2",
+      "codigo": "E30",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. DO CANAL – RUA CAP. MELLO – RUA ANTÔNIO MODESTO DE SÁ – RUA SANTA JOANA D ´ARC – AV. VITÓRIA RÉGIA – PRAÇA DO BARROCO – AV. ZUMBI DOS PALMARES – RUA VAN LERBERGUE – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA CARLOS MARIGUELLA – AV. CAIO FIGUEIREDO – RJ 106 (SENT. NITERÓI) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA.."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E30A_38_1",
+      "codigo": "E30A",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "RUA ARI SPINDOLA – RUA SOARES DE SOUZA – RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA ABREU RANGEL – AV. VEREADOR FRANCISCO SABINO COSTA – RJ 106 (SENT. MARICÁ) – RETORNO KM 28 – RJ 106 (SENT. NITERÓI) – RETORNO KM 12 – RJ 106 (SENT. MARICÁ) – AV. GILBERTO CARVALHO – RUA CARLOS MARIGUELLA – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA VAN LERBERGUE – AV. ZUMBI DOS PALMARES – PRAÇA DO BARROCO – AV. VITÓRIA RÉGIA – RUA SANTA JOANA D ´ARC – RUA ANTÔNIO MODESTO DE SÁ – RUA CAP. MELLO – AV. DO CANAL – PF RECANTO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E30A_38_2",
+      "codigo": "E30A",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "AV. DO CANAL – RUA CAP. MELLO – RUA ANTÔNIO MODESTO DE SÁ – RUA SANTA JOANA D ´ARC – AV. VITÓRIA RÉGIA – PRAÇA DO BARROCO – AV. ZUMBI DOS PALMARES – RUA VAN LERBERGUE – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA CARLOS MARIGUELLA – AV. GILBERTO CARVALHO – RJ 106 (SENT. MARICÁ) – AV. VEREADOR FRANCISCO SABINO COSTA - RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV NOSSA SENHORA DO AMPARO - RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA PADRE ARLINDO VIÊIRA – RUA CLÍMACO PEREIRA – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E30B_39_1",
+      "codigo": "E30B",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "RUA ARI SPINDOLA – RUA SOARES DE SOUZA – RUA CLÍMACO PEREIRA – RUA DOMICIO DA GAMA – RUA ABREU RANGEL – AV. VEREADOR FRANCISCO SABINO COSTA – RJ 106 (SENT. MARICÁ) – RETORNO KM 28 – RJ 106 (SENT.NITERÓI) – RETORNO KM12 – RJ 106 (SENT. MARICÁ) – AV. GILBERTO CARVALHO – AV. CARLOS MARIGUELLA – RUA PROFESSOR CARDOSO DE MENEZES – AV. JARDEL FILHO – RUA CINQUENTA E CINCO – RUA 34 – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E30B_39_2",
+      "codigo": "E30B",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA PROFESSOR CARDOSO DE MENEZES – RUA VAN LERBERGUE – RUA CINQUENTA E QUATRO – AV. JARDEL FILHO – RUA PROFESSOR DE MENEZES – RUA CARLOS MARIGUELLA – AV. GILBERTO CARVALHO – RJ 106 (SENT. MARICÁ) – AV. VEREADOR FRANCISCO SABINO COSTA – RUA JOAQUIM EUGÊNIO DOS SANTOS – RUA BARÃO DE INOÃ – RUA ÁLVARES DE CASTRO – RUA SILVINO ALVES DE SIQUEIRA – AV NOSSA SENHORA DO AMPARO - RUA CLÍMACO PEREIRA - RUA DOMICIO DA GAMA – RUA PADRE ARLINDO VIEIRA – RUA CLIMACO PEREIRA – RUA SOARES DE SOUZA – RUA ARI SPINDOLA – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E31_40_1",
+      "codigo": "E31",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. ROBERTO SILVEIRA – RJ 106 (SENTIDO SAQUAREMA) - RETORNO KM 32 – RJ 106 (SENTIDO INOÃ) – RETORNO KM 16 - RJ 106 (SENT. MARICÁ) - ESTRADA DOS CAJUEIROS - RUA CIRCULAR - RUA SESSENTA E TRÊS - AV. JARDEL FILHO – R. HÉLIO GUAPYASSU DE SÁ - R. ANTÔNIO MARQUES MATHIAS - PF RUA 128."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E31_40_2",
+      "codigo": "E31",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA 128 - R. GOV. LEONEL BRIZOLA - R. DOUGLAS MARQUES RIENTI - RUA ANTÔNIO MARQUES MATHIAS - R. HÉLIO GUAPYASSU DE SÁ - ESTRADA DOS CAJUEIROS - RJ 106 (SENT. MARICÁ) - AV. ROBERTO SILVEIRA - R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E32_41_1",
+      "codigo": "E32",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. DO CANAL – RUA CAP. MELLO – RUA ANTÔNIO MODESTO DE SÁ – RUA SANTA JOANA D ´ARC – AV. VITÓRIA RÉGIA – PRAÇA DO BARROCO – RUA CARLOS MARIGUELLA – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA GOVERNADOR LEONEL BRIZOLA (RUA 35) – RUA HÉLIO GUAPYASSU DE SÁ (RUA 66) – RUA ANTÔNIO MARQUES MATHIAS (RUA 36) – PF RUA 128."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E32_41_2",
+      "codigo": "E32",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA 128 – RUA GOVERNADOR LEONEL BRIZOLA (RUA 35) – RUA DOUGLAS MARQUES RIENTI – RUA ANTÔNIO MARQUES MATHIAS (RUA 36) – RUA HÉLIO GUAPYASSU DE SÁ (RUA 66) – RUA GOVERNADOR LEONEL BRIZOLA (RUA 35) – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA 42 - RUA DA PAZ - RUA CARLOS MARIGUELLA – PRAÇA DO BARROCO – AV. VITÓRIA RÉGIA – RUA SANTA JOANA D ´ARC – RUA ANTÔNIO MODESTO DE SÁ – RUA CAP. MELLO – AV. DO CANAL – PF RECANTO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E32A_42_1",
+      "codigo": "E32A",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "AV. DO CANAL – RUA CAP. MELLO – RUA ANTÔNIO MODESTO DE SÁ – RUA SANTA JOANA D ´ARC – AV. VITÓRIA RÉGIA – PRAÇA DO BARROCO – AV. ZUMBI DOS PALMARES – RUA VAN LERBERGUE (RUA 34) – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA GOVERNADOR LEONEL BRIZOLA (RUA 35) – RUA HÉLIO GUAPYASSU DE SÁ (RUA 66) – RUA ANTÔNIO MARQUES MATHIAS (RUA 36) – PF RUA 128."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E32A_42_2",
+      "codigo": "E32A",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA 128 – RUA GOVERNADOR LEONEL BRIZOLA (RUA 35) – RUA DOUGLAS MARQUES RIENTI – RUA ANTÔNIO MARQUES MATHIAS (RUA 36) – RUA HÉLIO GUAPYASSU DE SÁ (RUA 66) – RUA GOVERNADOR LEONEL BRIZOLA (RUA 35) – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA VAN LERBERGUE (RUA 34) – AV. ZUMBI DOS PALMARES – PRAÇA DO BARROCO – AV. VITÓRIA RÉGIA – RUA SANTA JOANA D ´ARC – RUA ANTÔNIO MODESTO DE SÁ – RUA CAP. MELLO – AV. DO CANAL – PF RECANTO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E33_43_1",
+      "codigo": "E33",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "RUA 42 - RUA DA PAZ - AVENIDA CARLOS MARIGUELLA - ESTRADA DE ITAIPUAÇU - RUA 03 - AVENIDA DAS ESMERALDAS - RUA DEOCLÉCIO MACHADO - RUA CAPITÃO MELLO - AVENIDA DO CANAL - RUA LUIS VIEIRA (PONTO FINAL)."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E33_43_2",
+      "codigo": "E33",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA LUIS VIEIRA - AVENIDA DO CANAL - RUA CAPITÃO MELLO - RUA DEOCLÉCIO MACHADO - AVENIDA DAS ESMERALDAS - RUA 03 - ESTRADA DE ITAIPUAÇU - AVENIDA CARLOS MARIGUELLA - RUA PROFESSOR CARDOSO DE MENEZES - TERMINAL DE ITAIPUAÇU."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E34_44_1",
+      "codigo": "E34",
+      "sentido": "circular",
+      "ruas_candidatas": [
+        "RUA PROFESSOR CARDOSO DE MENEZES – AV. JARDEL FILHO – RUA HÉLIO GUAPYASSU DE SÁ (RUA 66) – RUA VAN LERBERGUE (RUA 34) – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E35_45_1",
+      "codigo": "E35",
+      "sentido": "circular",
+      "ruas_candidatas": [
+        "PRAÇA DO FERREIRINHA – RUA DAS PERPÉTUAS – RUA SANT’ANA (ANTIGA 23) – RUA DOS NARCISOS – AV. CARLOS MARIGHELLA – PRAÇA DO BARROCO – AV. CARLOS MARIGHELLA – RUA DOS NARCISOS – AV. JARDEL FILHO – RUA 83 (DOUGLAS MARQUES RIENTI) – RUA 35 (GOV. LEONEL BRIZOLA) – RUA PROF. CARDOSO MENEZES – TERMINAL ITAIPUAÇU – RUA PROF. CARDOSO MENEZES – AV. JARDEL FILHO – RUA 32 – AV. CARLOS MARIGHELLA – RUA DOS NARCISOS – RUA SANT’ANA – RUA SÃO JOSÉ – AV. CARLOS MARIGHELLA – PRAÇA DO FERREIRINHA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E36_46_1",
+      "codigo": "E36",
+      "sentido": "circular",
+      "ruas_candidatas": [
+        "PRAÇA DO FERREIRINHA – RUA DOM PEDRITO – AV. CARLOS MARIGUELLA – PRAÇA DO BARROCO – ESTRADA DE ITAIPUAÇU – RUA DEZOITO – AV. ITAOCAIA VALLEY – AV. CARLOS MARIGUELLA – RETORNO ROTATÓRIA – AV. CARLOS MARIGUELLA – AV. ITAOCAIA VALLEY – RUA DEZOITO – ESTRADA DE ITAIPUAÇU – AV. CARLOS MARIGUELLA – PRAÇA DO BARROCO – AV. CARLOS MARIGUELLA – RUA DAS PERPÉTUAS – PF PRAÇA DO FERREIRINHA."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E37_47_1",
+      "codigo": "E37",
+      "sentido": "ida",
+      "ruas_candidatas": [
+        "RUA PROFESSOR CARDOSO DE MENEZES - AV. JARDEL FILHO - RUA DOUGLAS MARQUES RIENTI - RUA ANTÔNIO MARQUES MATHIAS - RUA CENTO E VINTE E OITO."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    },
+    {
+      "id": "E37_47_2",
+      "codigo": "E37",
+      "sentido": "volta",
+      "ruas_candidatas": [
+        "RUA CENTO E VINTE E OITO - RUA TRINTA E CINCO - RUA DOUGLAS MARQUES RIENTI - AV. JARDEL FILHO - AV. DAS GARDÊNIAS - AV. CARLOS MARIGUELLA - AV. ZUMBI DOS PALMARES - RUA VAN LERBERGUE - RUA PROFESSOR CARDOSO DE MENEZES -TERMINAL DE ITAIPUAÇU."
+      ],
+      "quantidade_ruas": 1,
+      "status": "pendente_validacao"
+    }
+  ],
+  "sem_ruas_reconhecidas": [
+    {
+      "codigo": "E25",
+      "sentido": "ida"
+    },
+    {
+      "codigo": "E25",
+      "sentido": "volta"
+    },
+    {
+      "codigo": "E25A",
+      "sentido": "volta"
+    }
+  ]
+}

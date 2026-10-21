@@ -1,0 +1,20 @@
+{
+  "registros_origem": 49,
+  "codigos_unicos": 48,
+  "itinerarios_preparados": 88,
+  "registros_para_revisao": 2,
+  "revisao": [
+    {
+      "codigo": "E30E",
+      "nome": "TERMINAL ITAIPUAÇU X TERMINAL CENTRO (EXPRESSO)",
+      "motivo": "Sem percurso estruturado",
+      "texto_original": "Veja o trajeto:\nTERMINAL DE ITAIPUAÇU – RUA PROFESSOR CARDOSO DE MENEZES – RUA CARLOS MARIGUELLA – AV. GILBERTO CARVALHO – RJ 106 (SENT. MARICÁ) – AV. ROBERTO SILVEIRA – R. MÁRIO LOPES FONTOURA – R. VER. LUIZ ANTÔNIO DA CUNHA – RODOVIÁRIA."
+    },
+    {
+      "codigo": "E30E",
+      "nome": "TERMINAL CENTRO X TERMINAL ITAIPUAÇU (EXPRESSO)",
+      "motivo": "Sem percurso estruturado",
+      "texto_original": "Veja o trajeto:\nTERMINAL DE MARICÁ. – AV. ROBERTO SILVEIRA – RJ 106 (SENT. SAQUAREMA) – RJ 106 (SENT. NITERÓI) – RETORNO KM 12 – RJ 106 (SENT. MARICÁ) – AV. GILBERTO CARVALHO – RUA CARLOS MARIGUELLA – RUA PROFESSOR CARDOSO DE MENEZES – TERMINAL DE ITAIPUAÇU.\nLinks Importantes\nPrefeitura Municipal de Maricá\nDiário Oficial de Maricá\nWebmail\nFale Conosco\nouvidoria@eptmarica.rj.gov.br\nOuvidoria - 21-2638-1825\nOuvidoria\n@ept_oficial\nAPP - EPT Maricá para Plataformas\nAndroid\ne\nIOS\nRodovia Amaral Peixoto, Lote A-13, Condado de Maricá, Maricá/RJ, CEP 24900-001\nHorário de Funcionamento : Seg - Sex: 08h - 17h\nBoletim de Notícias\nQuer ficar por dentro das novidades da EPT? Então se cadastre e receba por E-mail nosso boletim de notícias."
+    }
+  ]
+}

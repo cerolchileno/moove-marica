@@ -1,0 +1,713 @@
+{
+  "total_itinerarios": 88,
+  "total_trechos": 1237,
+  "total_vias_candidatas": 731,
+  "itinerarios_com_alertas": 0,
+  "problemas": [],
+  "registros": [
+    {
+      "id": "E01_1_1",
+      "codigo": "E01",
+      "sentido": "ida",
+      "quantidade_trechos": 6,
+      "quantidade_vias": 4,
+      "alertas": []
+    },
+    {
+      "id": "E01_1_2",
+      "codigo": "E01",
+      "sentido": "volta",
+      "quantidade_trechos": 13,
+      "quantidade_vias": 6,
+      "alertas": []
+    },
+    {
+      "id": "E01A_2_1",
+      "codigo": "E01A",
+      "sentido": "ida",
+      "quantidade_trechos": 8,
+      "quantidade_vias": 6,
+      "alertas": []
+    },
+    {
+      "id": "E01A_2_2",
+      "codigo": "E01A",
+      "sentido": "volta",
+      "quantidade_trechos": 17,
+      "quantidade_vias": 10,
+      "alertas": []
+    },
+    {
+      "id": "E02_3_1",
+      "codigo": "E02",
+      "sentido": "ida",
+      "quantidade_trechos": 21,
+      "quantidade_vias": 12,
+      "alertas": []
+    },
+    {
+      "id": "E02_3_2",
+      "codigo": "E02",
+      "sentido": "volta",
+      "quantidade_trechos": 28,
+      "quantidade_vias": 17,
+      "alertas": []
+    },
+    {
+      "id": "E02A_4_1",
+      "codigo": "E02A",
+      "sentido": "ida",
+      "quantidade_trechos": 14,
+      "quantidade_vias": 7,
+      "alertas": []
+    },
+    {
+      "id": "E02A_4_2",
+      "codigo": "E02A",
+      "sentido": "volta",
+      "quantidade_trechos": 20,
+      "quantidade_vias": 11,
+      "alertas": []
+    },
+    {
+      "id": "E03_5_1",
+      "codigo": "E03",
+      "sentido": "ida",
+      "quantidade_trechos": 8,
+      "quantidade_vias": 6,
+      "alertas": []
+    },
+    {
+      "id": "E03_5_2",
+      "codigo": "E03",
+      "sentido": "volta",
+      "quantidade_trechos": 13,
+      "quantidade_vias": 8,
+      "alertas": []
+    },
+    {
+      "id": "E04_6_1",
+      "codigo": "E04",
+      "sentido": "ida",
+      "quantidade_trechos": 4,
+      "quantidade_vias": 2,
+      "alertas": []
+    },
+    {
+      "id": "E04_6_2",
+      "codigo": "E04",
+      "sentido": "volta",
+      "quantidade_trechos": 9,
+      "quantidade_vias": 4,
+      "alertas": []
+    },
+    {
+      "id": "E05_7_1",
+      "codigo": "E05",
+      "sentido": "ida",
+      "quantidade_trechos": 5,
+      "quantidade_vias": 2,
+      "alertas": []
+    },
+    {
+      "id": "E05_7_2",
+      "codigo": "E05",
+      "sentido": "volta",
+      "quantidade_trechos": 10,
+      "quantidade_vias": 4,
+      "alertas": []
+    },
+    {
+      "id": "E06_8_1",
+      "codigo": "E06",
+      "sentido": "ida",
+      "quantidade_trechos": 5,
+      "quantidade_vias": 2,
+      "alertas": []
+    },
+    {
+      "id": "E06_8_2",
+      "codigo": "E06",
+      "sentido": "volta",
+      "quantidade_trechos": 9,
+      "quantidade_vias": 3,
+      "alertas": []
+    },
+    {
+      "id": "E07_9_1",
+      "codigo": "E07",
+      "sentido": "ida",
+      "quantidade_trechos": 8,
+      "quantidade_vias": 6,
+      "alertas": []
+    },
+    {
+      "id": "E07_9_2",
+      "codigo": "E07",
+      "sentido": "volta",
+      "quantidade_trechos": 11,
+      "quantidade_vias": 6,
+      "alertas": []
+    },
+    {
+      "id": "E08_10_1",
+      "codigo": "E08",
+      "sentido": "ida",
+      "quantidade_trechos": 22,
+      "quantidade_vias": 18,
+      "alertas": []
+    },
+    {
+      "id": "E08_10_2",
+      "codigo": "E08",
+      "sentido": "volta",
+      "quantidade_trechos": 16,
+      "quantidade_vias": 11,
+      "alertas": []
+    },
+    {
+      "id": "E08A_11_1",
+      "codigo": "E08A",
+      "sentido": "ida",
+      "quantidade_trechos": 21,
+      "quantidade_vias": 16,
+      "alertas": []
+    },
+    {
+      "id": "E08A_11_2",
+      "codigo": "E08A",
+      "sentido": "volta",
+      "quantidade_trechos": 14,
+      "quantidade_vias": 9,
+      "alertas": []
+    },
+    {
+      "id": "E09_12_1",
+      "codigo": "E09",
+      "sentido": "ida",
+      "quantidade_trechos": 28,
+      "quantidade_vias": 20,
+      "alertas": []
+    },
+    {
+      "id": "E09_12_2",
+      "codigo": "E09",
+      "sentido": "volta",
+      "quantidade_trechos": 19,
+      "quantidade_vias": 11,
+      "alertas": []
+    },
+    {
+      "id": "E09A_13_1",
+      "codigo": "E09A",
+      "sentido": "ida",
+      "quantidade_trechos": 30,
+      "quantidade_vias": 20,
+      "alertas": []
+    },
+    {
+      "id": "E09A_13_2",
+      "codigo": "E09A",
+      "sentido": "volta",
+      "quantidade_trechos": 18,
+      "quantidade_vias": 11,
+      "alertas": []
+    },
+    {
+      "id": "E10_14_1",
+      "codigo": "E10",
+      "sentido": "ida",
+      "quantidade_trechos": 9,
+      "quantidade_vias": 3,
+      "alertas": []
+    },
+    {
+      "id": "E10_14_2",
+      "codigo": "E10",
+      "sentido": "volta",
+      "quantidade_trechos": 10,
+      "quantidade_vias": 4,
+      "alertas": []
+    },
+    {
+      "id": "E10A_15_1",
+      "codigo": "E10A",
+      "sentido": "ida",
+      "quantidade_trechos": 10,
+      "quantidade_vias": 1,
+      "alertas": []
+    },
+    {
+      "id": "E10A_15_2",
+      "codigo": "E10A",
+      "sentido": "volta",
+      "quantidade_trechos": 15,
+      "quantidade_vias": 3,
+      "alertas": []
+    },
+    {
+      "id": "E10B_16_1",
+      "codigo": "E10B",
+      "sentido": "ida",
+      "quantidade_trechos": 18,
+      "quantidade_vias": 8,
+      "alertas": []
+    },
+    {
+      "id": "E10B_16_2",
+      "codigo": "E10B",
+      "sentido": "volta",
+      "quantidade_trechos": 15,
+      "quantidade_vias": 5,
+      "alertas": []
+    },
+    {
+      "id": "E11_17_1",
+      "codigo": "E11",
+      "sentido": "ida",
+      "quantidade_trechos": 17,
+      "quantidade_vias": 13,
+      "alertas": []
+    },
+    {
+      "id": "E11_17_2",
+      "codigo": "E11",
+      "sentido": "volta",
+      "quantidade_trechos": 14,
+      "quantidade_vias": 9,
+      "alertas": []
+    },
+    {
+      "id": "E12_18_1",
+      "codigo": "E12",
+      "sentido": "ida",
+      "quantidade_trechos": 24,
+      "quantidade_vias": 16,
+      "alertas": []
+    },
+    {
+      "id": "E12_18_2",
+      "codigo": "E12",
+      "sentido": "volta",
+      "quantidade_trechos": 18,
+      "quantidade_vias": 11,
+      "alertas": []
+    },
+    {
+      "id": "E13_19_1",
+      "codigo": "E13",
+      "sentido": "ida",
+      "quantidade_trechos": 12,
+      "quantidade_vias": 10,
+      "alertas": []
+    },
+    {
+      "id": "E13_19_2",
+      "codigo": "E13",
+      "sentido": "volta",
+      "quantidade_trechos": 26,
+      "quantidade_vias": 20,
+      "alertas": []
+    },
+    {
+      "id": "E14_20_1",
+      "codigo": "E14",
+      "sentido": "ida",
+      "quantidade_trechos": 7,
+      "quantidade_vias": 3,
+      "alertas": []
+    },
+    {
+      "id": "E14_20_2",
+      "codigo": "E14",
+      "sentido": "volta",
+      "quantidade_trechos": 15,
+      "quantidade_vias": 6,
+      "alertas": []
+    },
+    {
+      "id": "E14A_21_1",
+      "codigo": "E14A",
+      "sentido": "ida",
+      "quantidade_trechos": 13,
+      "quantidade_vias": 8,
+      "alertas": []
+    },
+    {
+      "id": "E14A_21_2",
+      "codigo": "E14A",
+      "sentido": "volta",
+      "quantidade_trechos": 17,
+      "quantidade_vias": 10,
+      "alertas": []
+    },
+    {
+      "id": "E15_22_1",
+      "codigo": "E15",
+      "sentido": "ida",
+      "quantidade_trechos": 4,
+      "quantidade_vias": 2,
+      "alertas": []
+    },
+    {
+      "id": "E15_22_2",
+      "codigo": "E15",
+      "sentido": "volta",
+      "quantidade_trechos": 8,
+      "quantidade_vias": 3,
+      "alertas": []
+    },
+    {
+      "id": "E15A_23_1",
+      "codigo": "E15A",
+      "sentido": "ida",
+      "quantidade_trechos": 8,
+      "quantidade_vias": 6,
+      "alertas": []
+    },
+    {
+      "id": "E15A_23_2",
+      "codigo": "E15A",
+      "sentido": "volta",
+      "quantidade_trechos": 17,
+      "quantidade_vias": 11,
+      "alertas": []
+    },
+    {
+      "id": "E16_24_1",
+      "codigo": "E16",
+      "sentido": "ida",
+      "quantidade_trechos": 16,
+      "quantidade_vias": 10,
+      "alertas": []
+    },
+    {
+      "id": "E16_24_2",
+      "codigo": "E16",
+      "sentido": "volta",
+      "quantidade_trechos": 7,
+      "quantidade_vias": 5,
+      "alertas": []
+    },
+    {
+      "id": "E17_25_1",
+      "codigo": "E17",
+      "sentido": "ida",
+      "quantidade_trechos": 12,
+      "quantidade_vias": 2,
+      "alertas": []
+    },
+    {
+      "id": "E17_25_2",
+      "codigo": "E17",
+      "sentido": "volta",
+      "quantidade_trechos": 12,
+      "quantidade_vias": 4,
+      "alertas": []
+    },
+    {
+      "id": "E20_26_1",
+      "codigo": "E20",
+      "sentido": "ida",
+      "quantidade_trechos": 9,
+      "quantidade_vias": 6,
+      "alertas": []
+    },
+    {
+      "id": "E20_26_2",
+      "codigo": "E20",
+      "sentido": "volta",
+      "quantidade_trechos": 13,
+      "quantidade_vias": 9,
+      "alertas": []
+    },
+    {
+      "id": "E21_27_1",
+      "codigo": "E21",
+      "sentido": "ida",
+      "quantidade_trechos": 23,
+      "quantidade_vias": 14,
+      "alertas": []
+    },
+    {
+      "id": "E21_27_2",
+      "codigo": "E21",
+      "sentido": "volta",
+      "quantidade_trechos": 24,
+      "quantidade_vias": 15,
+      "alertas": []
+    },
+    {
+      "id": "E22_28_1",
+      "codigo": "E22",
+      "sentido": "ida",
+      "quantidade_trechos": 6,
+      "quantidade_vias": 3,
+      "alertas": []
+    },
+    {
+      "id": "E22_28_2",
+      "codigo": "E22",
+      "sentido": "volta",
+      "quantidade_trechos": 10,
+      "quantidade_vias": 5,
+      "alertas": []
+    },
+    {
+      "id": "E23_29_1",
+      "codigo": "E23",
+      "sentido": "ida",
+      "quantidade_trechos": 6,
+      "quantidade_vias": 3,
+      "alertas": []
+    },
+    {
+      "id": "E23_29_2",
+      "codigo": "E23",
+      "sentido": "volta",
+      "quantidade_trechos": 10,
+      "quantidade_vias": 5,
+      "alertas": []
+    },
+    {
+      "id": "E24_30_1",
+      "codigo": "E24",
+      "sentido": "circular",
+      "quantidade_trechos": 17,
+      "quantidade_vias": 13,
+      "alertas": []
+    },
+    {
+      "id": "E24A_31_1",
+      "codigo": "E24A",
+      "sentido": "circular",
+      "quantidade_trechos": 23,
+      "quantidade_vias": 16,
+      "alertas": []
+    },
+    {
+      "id": "E25_32_1",
+      "codigo": "E25",
+      "sentido": "ida",
+      "quantidade_trechos": 4,
+      "quantidade_vias": 2,
+      "alertas": []
+    },
+    {
+      "id": "E25_32_2",
+      "codigo": "E25",
+      "sentido": "volta",
+      "quantidade_trechos": 3,
+      "quantidade_vias": 1,
+      "alertas": []
+    },
+    {
+      "id": "E25A_33_1",
+      "codigo": "E25A",
+      "sentido": "ida",
+      "quantidade_trechos": 12,
+      "quantidade_vias": 7,
+      "alertas": []
+    },
+    {
+      "id": "E25A_33_2",
+      "codigo": "E25A",
+      "sentido": "volta",
+      "quantidade_trechos": 3,
+      "quantidade_vias": 1,
+      "alertas": []
+    },
+    {
+      "id": "E26_34_1",
+      "codigo": "E26",
+      "sentido": "circular",
+      "quantidade_trechos": 28,
+      "quantidade_vias": 18,
+      "alertas": []
+    },
+    {
+      "id": "E27_35_1",
+      "codigo": "E27",
+      "sentido": "ida",
+      "quantidade_trechos": 7,
+      "quantidade_vias": 5,
+      "alertas": []
+    },
+    {
+      "id": "E27_35_2",
+      "codigo": "E27",
+      "sentido": "volta",
+      "quantidade_trechos": 5,
+      "quantidade_vias": 3,
+      "alertas": []
+    },
+    {
+      "id": "E28_36_1",
+      "codigo": "E28",
+      "sentido": "ida",
+      "quantidade_trechos": 8,
+      "quantidade_vias": 5,
+      "alertas": []
+    },
+    {
+      "id": "E28_36_2",
+      "codigo": "E28",
+      "sentido": "volta",
+      "quantidade_trechos": 6,
+      "quantidade_vias": 2,
+      "alertas": []
+    },
+    {
+      "id": "E30_37_1",
+      "codigo": "E30",
+      "sentido": "ida",
+      "quantidade_trechos": 22,
+      "quantidade_vias": 12,
+      "alertas": []
+    },
+    {
+      "id": "E30_37_2",
+      "codigo": "E30",
+      "sentido": "volta",
+      "quantidade_trechos": 19,
+      "quantidade_vias": 9,
+      "alertas": []
+    },
+    {
+      "id": "E30A_38_1",
+      "codigo": "E30A",
+      "sentido": "ida",
+      "quantidade_trechos": 26,
+      "quantidade_vias": 16,
+      "alertas": []
+    },
+    {
+      "id": "E30A_38_2",
+      "codigo": "E30A",
+      "sentido": "volta",
+      "quantidade_trechos": 31,
+      "quantidade_vias": 19,
+      "alertas": []
+    },
+    {
+      "id": "E30B_39_1",
+      "codigo": "E30B",
+      "sentido": "ida",
+      "quantidade_trechos": 20,
+      "quantidade_vias": 12,
+      "alertas": []
+    },
+    {
+      "id": "E30B_39_2",
+      "codigo": "E30B",
+      "sentido": "volta",
+      "quantidade_trechos": 25,
+      "quantidade_vias": 16,
+      "alertas": []
+    },
+    {
+      "id": "E31_40_1",
+      "codigo": "E31",
+      "sentido": "ida",
+      "quantidade_trechos": 14,
+      "quantidade_vias": 6,
+      "alertas": []
+    },
+    {
+      "id": "E31_40_2",
+      "codigo": "E31",
+      "sentido": "volta",
+      "quantidade_trechos": 11,
+      "quantidade_vias": 3,
+      "alertas": []
+    },
+    {
+      "id": "E32_41_1",
+      "codigo": "E32",
+      "sentido": "ida",
+      "quantidade_trechos": 15,
+      "quantidade_vias": 10,
+      "alertas": []
+    },
+    {
+      "id": "E32_41_2",
+      "codigo": "E32",
+      "sentido": "volta",
+      "quantidade_trechos": 19,
+      "quantidade_vias": 14,
+      "alertas": []
+    },
+    {
+      "id": "E32A_42_1",
+      "codigo": "E32A",
+      "sentido": "ida",
+      "quantidade_trechos": 16,
+      "quantidade_vias": 10,
+      "alertas": []
+    },
+    {
+      "id": "E32A_42_2",
+      "codigo": "E32A",
+      "sentido": "volta",
+      "quantidade_trechos": 18,
+      "quantidade_vias": 12,
+      "alertas": []
+    },
+    {
+      "id": "E33_43_1",
+      "codigo": "E33",
+      "sentido": "ida",
+      "quantidade_trechos": 11,
+      "quantidade_vias": 10,
+      "alertas": []
+    },
+    {
+      "id": "E33_43_2",
+      "codigo": "E33",
+      "sentido": "volta",
+      "quantidade_trechos": 10,
+      "quantidade_vias": 9,
+      "alertas": []
+    },
+    {
+      "id": "E34_44_1",
+      "codigo": "E34",
+      "sentido": "circular",
+      "quantidade_trechos": 7,
+      "quantidade_vias": 4,
+      "alertas": []
+    },
+    {
+      "id": "E35_45_1",
+      "codigo": "E35",
+      "sentido": "circular",
+      "quantidade_trechos": 22,
+      "quantidade_vias": 14,
+      "alertas": []
+    },
+    {
+      "id": "E36_46_1",
+      "codigo": "E36",
+      "sentido": "circular",
+      "quantidade_trechos": 18,
+      "quantidade_vias": 8,
+      "alertas": []
+    },
+    {
+      "id": "E37_47_1",
+      "codigo": "E37",
+      "sentido": "ida",
+      "quantidade_trechos": 6,
+      "quantidade_vias": 4,
+      "alertas": []
+    },
+    {
+      "id": "E37_47_2",
+      "codigo": "E37",
+      "sentido": "volta",
+      "quantidade_trechos": 9,
+      "quantidade_vias": 5,
+      "alertas": []
+    }
+  ]
+}

@@ -5,6 +5,9 @@ from pydantic import BaseModel, Field
 from app.services.geocoding import buscar_enderecos
 from typing import Literal
 from app.services.routing import calcular_rota
+from datetime import datetime
+from app.services.bus_planner import planejar_onibus
+from app.services.pontos_onibus import listar_pontos_onibus
 
 
 app = FastAPI(
@@ -85,3 +88,66 @@ def pesquisar_enderecos(q: str):
             status_code=503,
             detail="Serviço de busca indisponível no momento.",
         ) from erro
+
+
+from fastapi import HTTPException
+from pydantic import BaseModel
+
+
+class CoordenadaOnibus(BaseModel):
+    lat: float
+    lng: float
+
+
+class RequisicaoOnibus(BaseModel):
+    origem: CoordenadaOnibus
+    destino: CoordenadaOnibus
+    data_hora: datetime | None = None
+
+
+@app.post("/api/rotas/onibus")
+def calcular_rota_onibus(requisicao: RequisicaoOnibus):
+    try:
+        return planejar_onibus(
+            origem_lat=requisicao.origem.lat,
+            origem_lng=requisicao.origem.lng,
+            destino_lat=requisicao.destino.lat,
+            destino_lng=requisicao.destino.lng,
+            data_hora=requisicao.data_hora,
+        )
+    except FileNotFoundError as erro:
+        raise HTTPException(
+            status_code=503,
+            detail=str(erro),
+        )
+    except ValueError as erro:
+        raise HTTPException(
+            status_code=422,
+            detail=str(erro),
+        )
+
+
+@app.get("/api/onibus/pontos")
+def obter_pontos_onibus(limite: int = 1000):
+    from fastapi import HTTPException
+
+    if limite < 1 or limite > 10000:
+        raise HTTPException(
+            status_code=422,
+            detail="Limite deve estar entre 1 e 10000.",
+        )
+
+    try:
+        return listar_pontos_onibus(limite)
+
+    except FileNotFoundError as erro:
+        raise HTTPException(
+            status_code=503,
+            detail=str(erro),
+        )
+
+    except ValueError as erro:
+        raise HTTPException(
+            status_code=500,
+            detail=str(erro),
+        )

@@ -1,0 +1,518 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "municipio_referencia": "Marica",
+    "fonte": "OpenStreetMap",
+    "arquivo_origem": "marica_ampliado.osm.pbf",
+    "extraido_em_utc": "2026-10-21T03:08:24.295359+00:00",
+    "observacao": "Pontos candidatos extraidos de uma caixa geografica aproximada. Nao sao paradas oficiais confirmadas da EPT e podem incluir pontos fora de Marica."
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9239434,
+          -22.9347805
+        ]
+      },
+      "properties": {
+        "id": "node/343751674",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": null,
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.6053935,
+          -22.7796129
+        ]
+      },
+      "properties": {
+        "id": "node/582632566",
+        "nome": "Catimbau - Ponto Final",
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.6598133,
+          -22.7825051
+        ]
+      },
+      "properties": {
+        "id": "node/582633620",
+        "nome": "Rio Seco",
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.6396655,
+          -22.8063075
+        ]
+      },
+      "properties": {
+        "id": "node/582633910",
+        "nome": "Mata",
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.6191808,
+          -22.8121221
+        ]
+      },
+      "properties": {
+        "id": "node/582634058",
+        "nome": "Rio Seco - Ponto Final",
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9802367,
+          -22.8059338
+        ]
+      },
+      "properties": {
+        "id": "node/586842530",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": null,
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.5651066,
+          -22.7842525
+        ]
+      },
+      "properties": {
+        "id": "node/1710635376",
+        "nome": "Trevo Prainha",
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.5651431,
+          -22.7843509
+        ]
+      },
+      "properties": {
+        "id": "node/2154435853",
+        "nome": "Trevo Prainha",
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9369413,
+          -22.945049
+        ]
+      },
+      "properties": {
+        "id": "node/2947725134",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": null,
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.8947444,
+          -22.7583562
+        ]
+      },
+      "properties": {
+        "id": "node/4613234254",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": null,
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9325265,
+          -22.7735886
+        ]
+      },
+      "properties": {
+        "id": "node/9010866230",
+        "nome": "Ponto Surf",
+        "referencia": "Av. Pres. Roosevelt, 2484",
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": "no",
+        "bench": "yes",
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9769848,
+          -22.8106743
+        ]
+      },
+      "properties": {
+        "id": "node/11777080488",
+        "nome": "Ponto de Onibus - Sentido Niteroi",
+        "referencia": "550M, 488M, 30, 483M",
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": "no",
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9373458,
+          -22.9456817
+        ]
+      },
+      "properties": {
+        "id": "node/12200329200",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": null,
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.927302,
+          -22.9369531
+        ]
+      },
+      "properties": {
+        "id": "node/12205606140",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": null,
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.8504141,
+          -22.9165431
+        ]
+      },
+      "properties": {
+        "id": "node/12784888939",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "bench": "yes",
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.8691969,
+          -22.9280198
+        ]
+      },
+      "properties": {
+        "id": "node/12784930338",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "bench": "yes",
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.8689421,
+          -22.9281631
+        ]
+      },
+      "properties": {
+        "id": "node/12784930339",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "bench": "yes",
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9066254,
+          -22.9356284
+        ]
+      },
+      "properties": {
+        "id": "node/12832653145",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "bench": "yes",
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9314474,
+          -22.9148934
+        ]
+      },
+      "properties": {
+        "id": "node/13157071030",
+        "nome": "Ponto de ônibus",
+        "referencia": "E23, E21, E22, E25A",
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.5907044,
+          -22.7542517
+        ]
+      },
+      "properties": {
+        "id": "node/13456846425",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.5443372,
+          -22.7888631
+        ]
+      },
+      "properties": {
+        "id": "node/13456846427",
+        "nome": "Ambulatório de Boa Esperança",
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.5707782,
+          -22.7792335
+        ]
+      },
+      "properties": {
+        "id": "node/13474318181",
+        "nome": null,
+        "referencia": null,
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": null,
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.9841845,
+          -22.9599458
+        ]
+      },
+      "properties": {
+        "id": "node/14268502318",
+        "nome": "Ponto Avenida Carlos Marighella",
+        "referencia": "15",
+        "highway": "bus_stop",
+        "public_transport": "platform",
+        "shelter": "yes",
+        "bench": null,
+        "fonte": "OpenStreetMap local",
+        "status": "candidato_nao_validado",
+        "linha_ept": null
+      }
+    }
+  ]
+}

@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import MaricaMap, { type Ponto } from "./components/MaricaMap";
 import BuscaEndereco from "./components/BuscaEndereco";
 import "./App.css";
+import PontosOnibus from "./components/PontosOnibus";
 
 type Transporte = "caminhada" | "onibus" | "bicicleta";
 

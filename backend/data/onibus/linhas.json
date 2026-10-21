@@ -1,0 +1,18 @@
+
+{
+  "sistema": "Vermelhinhos",
+  "municipio": "Maricá",
+  "operadora": "Empresa Pública de Transportes (EPT)",
+  "tarifa": 0,
+  "fonte_oficial": "https://www.eptmarica.rj.gov.br/",
+  "linhas": [
+    {
+      "codigo": "E01",
+      "nome": "Centro - Ponta Negra (via Manoel Ribeiro)",
+      "itinerarios": [],
+      "pontos": [],
+      "horarios": [],
+      "status_dados": "pendente_validacao"
+    }
+  ]
+}
