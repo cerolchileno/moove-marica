@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from app.services.geocoding import buscar_enderecos
-
+from typing import Literal
 from app.services.routing import calcular_rota
 
 
@@ -33,6 +33,7 @@ class Coordenada(BaseModel):
 class RequisicaoRota(BaseModel):
     origem: Coordenada
     destino: Coordenada
+    modalidade: Literal["caminhada", "bicicleta"] = "caminhada"
 
 
 @app.get("/api/status")
@@ -51,6 +52,7 @@ def criar_rota(requisicao: RequisicaoRota):
             origem_lng=requisicao.origem.lng,
             destino_lat=requisicao.destino.lat,
             destino_lng=requisicao.destino.lng,
+            modalidade=requisicao.modalidade,
         )
 
     except FileNotFoundError as erro:

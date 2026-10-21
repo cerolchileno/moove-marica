@@ -12,6 +12,7 @@ type ResultadoRota = {
   distancia_m: number;
   tempo_min: number;
   coordenadas: [number, number][];
+  experimental?: boolean;
 };
 
 const API_URL = "http://127.0.0.1:8000";
@@ -111,9 +112,10 @@ export default function App() {
       return;
     }
 
-    if (transporte !== "caminhada") {
+    // Ônibus ainda não possui roteamento implementado
+    if (transporte === "onibus") {
       setMensagem(
-        "Por enquanto, o cálculo está disponível apenas para caminhada."
+        "O cálculo de rotas de ônibus ainda está em desenvolvimento."
       );
       return;
     }
@@ -125,7 +127,9 @@ export default function App() {
 
     setCarregando(true);
     setMensagem(
-      "Calculando a melhor rota pelas ruas de Maricá..."
+      transporte === "bicicleta"
+        ? "Calculando rota experimental de bicicleta..."
+        : "Calculando a melhor rota pelas ruas de Maricá..."
     );
 
     try {
@@ -140,6 +144,7 @@ export default function App() {
           body: JSON.stringify({
             origem,
             destino,
+            modalidade: transporte,
           }),
         }
       );
@@ -164,7 +169,12 @@ export default function App() {
       }
 
       setResultado(dados);
-      setMensagem("Rota calculada com sucesso!");
+
+      setMensagem(
+        dados.experimental
+          ? "Rota experimental de bicicleta calculada!"
+          : "Rota calculada com sucesso!"
+      );
     } catch (erro) {
       if (controlador.signal.aborted) {
         return;
@@ -218,7 +228,7 @@ export default function App() {
             </p>
           </div>
 
-          {/* NOVO: Pesquisa de origem e destino */}
+          {/* Pesquisa de origem e destino */}
           <div className="pesquisas-endereco">
             <BuscaEndereco
               titulo="Origem"
@@ -286,7 +296,9 @@ export default function App() {
                   setMensagem(
                     id === "caminhada"
                       ? "Modo caminhada selecionado."
-                      : "Modalidade em desenvolvimento."
+                      : id === "bicicleta"
+                        ? "Modo bicicleta experimental selecionado."
+                        : "Modalidade de ônibus em desenvolvimento."
                   );
                 }}
                 aria-pressed={transporte === id}
@@ -335,6 +347,15 @@ export default function App() {
           {resultado && (
             <div className="resultado-rota">
               <h3>Resumo da sua rota</h3>
+
+              {resultado.experimental && (
+                <p role="note">
+                  ⚠️ Rota de bicicleta experimental.
+                  O trajeto ainda não foi validado
+                  quanto à segurança, às permissões
+                  de circulação e aos sentidos das vias.
+                </p>
+              )}
 
               <div className="resultado-dados">
                 <div>
