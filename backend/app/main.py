@@ -2,6 +2,7 @@
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
+from app.services.geocoding import buscar_enderecos
 
 from app.services.routing import calcular_rota
 
@@ -62,4 +63,23 @@ def criar_rota(requisicao: RequisicaoRota):
         raise HTTPException(
             status_code=422,
             detail=str(erro),
+        ) from erro
+
+
+@app.get("/api/enderecos")
+def pesquisar_enderecos(q: str):
+    if len(q.strip()) < 3:
+        raise HTTPException(
+            status_code=422,
+            detail="Digite pelo menos 3 caracteres.",
+        )
+
+    try:
+        return {
+            "resultados": buscar_enderecos(q)
+        }
+    except Exception as erro:
+        raise HTTPException(
+            status_code=503,
+            detail="Serviço de busca indisponível no momento.",
         ) from erro
